@@ -1,0 +1,45 @@
+@font-face { font-family: 'Abraham'; src: url("./fonts/AbrahamMedium.eot"); src: url("./fonts/AbrahamMedium.eot?#iefix") format("embedded-opentype"), url("./fonts/AbrahamMedium.woff2") format("woff2"), url("./fonts/AbrahamMedium.woff") format("woff"), url("./fonts/AbrahamMedium.ttf") format("truetype"), url("./fonts/AbrahamMedium.svg#AbrahamMedium") format("svg"); font-weight: 500; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Abraham'; src: url("./fonts/AbrahamThin.eot"); src: url("./fonts/AbrahamThin.eot?#iefix") format("embedded-opentype"), url("./fonts/AbrahamThin.woff2") format("woff2"), url("./fonts/AbrahamThin.woff") format("woff"), url("./fonts/AbrahamThin.ttf") format("truetype"), url("./fonts/AbrahamThin.svg#AbrahamThin") format("svg"); font-weight: 100; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Abraham'; src: url("./fonts/Abraham-Regular.eot"); src: url("./fonts/Abraham-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Abraham-Regular.woff2") format("woff2"), url("./fonts/Abraham-Regular.woff") format("woff"), url("./fonts/Abraham-Regular.ttf") format("truetype"), url("./fonts/Abraham-Regular.svg#Abraham-Regular") format("svg"); font-weight: normal; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Abraham'; src: url("./fonts/Abraham-Light.eot"); src: url("./fonts/Abraham-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Abraham-Light.woff2") format("woff2"), url("./fonts/Abraham-Light.woff") format("woff"), url("./fonts/Abraham-Light.ttf") format("truetype"), url("./fonts/Abraham-Light.svg#Abraham-Light") format("svg"); font-weight: 300; font-style: normal; font-display: swap; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; font-size: 62.5%; overflow-x: hidden; }
+
+body { background: #ffffff; color: #000000; font-family: "Abraham"; }
+
+nav { background: #4D58C3; }
+
+ul { list-style: none; display: flex; align-items: center; justify-content: space-between; margin: 0 5vw 0 5vw; }
+
+a { color: white; text-decoration: none; }
+
+section { display: flex; flex-direction: column; position: relative; color: white; }
+
+section h1 { font-size: 3rem; margin-bottom: 1rem; }
+
+section p { font-size: 2rem; line-height: 1.5; margin-bottom: 2rem; }
+
+section#about { background-color: #4D58C3; padding: 2rem 2rem; }
+
+section#about img { width: 60%; align-self: center; }
+
+section#meshutaf div, section#social-justice div, section#kibbutzi div, section#nachshonim div { padding: 2rem 2rem 0 2rem; background-color: #C14DC3; width: 100%; display: flex; flex-direction: column; }
+
+section#meshutaf div img, section#social-justice div img, section#kibbutzi div img, section#nachshonim div img { width: 120%; align-self: center; transform: translateY(10%); z-index: 0; }
+
+section#meshutaf div + img, section#social-justice div + img, section#kibbutzi div + img, section#nachshonim div + img { width: 110%; margin-top: -50%; align-self: baseline; z-index: 1; }
+
+section#meshutaf div { background-color: #C14DC3; }
+
+section#social-justice div { background-color: #d03854; }
+
+section#kibbutzi div { background: url("/assets/img/illustrations/mobile/kibbutzi.svg"); background-color: #4dc367; background-size: cover; background-position: 0 10%; padding-bottom: 50%; }
+
+section#nachshonim div { background-color: #65a6d6; }
+
+/*# sourceMappingURL=main.css.map */

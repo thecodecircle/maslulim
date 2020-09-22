@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Abraham';
+    src: url('./fonts/AbrahamMedium.eot');
+    src: url('./fonts/AbrahamMedium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/AbrahamMedium.woff2') format('woff2'),
+        url('./fonts/AbrahamMedium.woff') format('woff'),
+        url('./fonts/AbrahamMedium.ttf') format('truetype'),
+        url('./fonts/AbrahamMedium.svg#AbrahamMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Abraham';
+    src: url('./fonts/AbrahamThin.eot');
+    src: url('./fonts/AbrahamThin.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/AbrahamThin.woff2') format('woff2'),
+        url('./fonts/AbrahamThin.woff') format('woff'),
+        url('./fonts/AbrahamThin.ttf') format('truetype'),
+        url('./fonts/AbrahamThin.svg#AbrahamThin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abraham';
+    src: url('./fonts/Abraham-Regular.eot');
+    src: url('./fonts/Abraham-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Abraham-Regular.woff2') format('woff2'),
+        url('./fonts/Abraham-Regular.woff') format('woff'),
+        url('./fonts/Abraham-Regular.ttf') format('truetype'),
+        url('./fonts/Abraham-Regular.svg#Abraham-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abraham';
+    src: url('./fonts/Abraham-Light.eot');
+    src: url('./fonts/Abraham-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Abraham-Light.woff2') format('woff2'),
+        url('./fonts/Abraham-Light.woff') format('woff'),
+        url('./fonts/Abraham-Light.ttf') format('truetype'),
+        url('./fonts/Abraham-Light.svg#Abraham-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
