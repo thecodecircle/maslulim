@@ -28,18 +28,36 @@ section#about { background-color: #4D58C3; padding: 2rem 2rem; }
 
 section#about img { width: 60%; align-self: center; }
 
-section#meshutaf div, section#social-justice div, section#kibbutzi div, section#nachshonim div { padding: 2rem 2rem 0 2rem; background-color: #C14DC3; width: 100%; display: flex; flex-direction: column; }
+section#meshutaf div, section#social-justice div, section#kibbutzi div, section#nachshonim div, section#contact div { padding: 2rem 2rem 0 2rem; width: 100%; display: flex; flex-direction: column; }
 
-section#meshutaf div img, section#social-justice div img, section#kibbutzi div img, section#nachshonim div img { width: 120%; align-self: center; transform: translateY(10%); z-index: 0; }
+section#meshutaf div img, section#social-justice div img, section#kibbutzi div img, section#nachshonim div img, section#contact div img { width: 120%; align-self: center; transform: translateY(10%); z-index: 0; }
 
-section#meshutaf div + img, section#social-justice div + img, section#kibbutzi div + img, section#nachshonim div + img { width: 110%; margin-top: -50%; align-self: baseline; z-index: 1; }
+section#meshutaf div + img, section#social-justice div + img, section#kibbutzi div + img, section#nachshonim div + img, section#contact div + img { width: 110%; margin-top: -50%; align-self: baseline; z-index: 1; }
 
 section#meshutaf div { background-color: #C14DC3; }
 
 section#social-justice div { background-color: #d03854; }
 
-section#kibbutzi div { background: url("/assets/img/illustrations/mobile/kibbutzi.svg"); background-color: #4dc367; background-size: cover; background-position: 0 10%; padding-bottom: 50%; }
+section#kibbutzi div { background: url("/assets/img/svg/mobile/kibbutzi.svg"); background-color: #4dc367; background-size: cover; background-position: 0 10%; padding-bottom: 50%; }
 
 section#nachshonim div { background-color: #65a6d6; }
+
+section#nachshonim div img { margin-top: -50%; width: 110%; transform: translateY(50%); }
+
+section#nachshonim div + img { width: 100%; margin-top: -30%; margin-left: 15%; align-self: center; }
+
+section#contact { background-color: #4D58C3; }
+
+section#contact div:first-child { display: grid; grid-template-areas: "h1 logo" "p logo"; }
+
+section#contact div:first-child h1 { grid-area: h1; }
+
+section#contact div:first-child p { grid-area: p; }
+
+section#contact div:first-child img { grid-area: logo; }
+
+section#contact div + div { background: white; }
+
+section#contact div + div form { background: #4D58C3; }
 
 /*# sourceMappingURL=main.css.map */

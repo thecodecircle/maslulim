@@ -75,10 +75,10 @@ section#meshutaf,
 section#social-justice,
 section#kibbutzi,
 section#nachshonim,
+section#contact
 {
 	div{
 		padding: 2rem 2rem 0 2rem;
-		background-color: $pink;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -109,17 +109,60 @@ section#social-justice div{
 }
 section#kibbutzi{
 	div{
-		background: url("/assets/img/illustrations/mobile/kibbutzi.svg");
+		background: url("/assets/img/svg/mobile/kibbutzi.svg");
 		background-color: $green;
 		background-size: cover;
 		background-position: 0 10%;
 		padding-bottom: 50%;
-		// img{
-		// 	width: 100%;
-		// 	transform: translateY(10%);
-		// }
+	}
+	// img{
+	// 	width: 100%;
+	// 	// transform: translateY(10%);
+	// }
+}
+section#nachshonim{
+	div{
+		background-color: $light-blue;
+		img{
+			margin-top: -50%;
+			width: 110%;
+			transform: translateY(50%);
+		}
+	}
+	div + img{
+		width: 100%;
+		margin-top: -30%;
+		margin-left: 15%;
+		align-self: center;
 	}
 }
-section#nachshonim div{
-	background-color: $light-blue;
+section#contact{
+	// height: 100vh;
+	background-color: $blue;
+	div:first-child{
+		display: grid;
+		grid-template-areas:
+		"h1 logo"
+		"p logo";
+		h1{
+			grid-area: h1;
+		}
+		p{
+			grid-area: p;
+		}
+		img{
+			grid-area: logo;
+		}
+	}
+	div + div{
+		background: white;
+
+		form{
+			background: $blue 
+		}
+	}
 }
+// footer{
+// 	height: 10vh;
+// 	back
+// }
