@@ -1,10 +1,14 @@
-@font-face { font-family: 'Abraham'; src: url("./fonts/AbrahamMedium.eot"); src: url("./fonts/AbrahamMedium.eot?#iefix") format("embedded-opentype"), url("./fonts/AbrahamMedium.woff2") format("woff2"), url("./fonts/AbrahamMedium.woff") format("woff"), url("./fonts/AbrahamMedium.ttf") format("truetype"), url("./fonts/AbrahamMedium.svg#AbrahamMedium") format("svg"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Abraham'; src: url("/assets/fonts/AbrahamMedium.eot"); src: url("/assets/fonts/AbrahamMedium.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/AbrahamMedium.woff2") format("woff2"), url("/assets/fonts/AbrahamMedium.woff") format("woff"), url("/assets/fonts/AbrahamMedium.ttf") format("truetype"), url("/assets/fonts/AbrahamMedium.svg#AbrahamMedium") format("svg"); font-weight: 500; font-style: normal; font-display: swap; }
 
-@font-face { font-family: 'Abraham'; src: url("./fonts/AbrahamThin.eot"); src: url("./fonts/AbrahamThin.eot?#iefix") format("embedded-opentype"), url("./fonts/AbrahamThin.woff2") format("woff2"), url("./fonts/AbrahamThin.woff") format("woff"), url("./fonts/AbrahamThin.ttf") format("truetype"), url("./fonts/AbrahamThin.svg#AbrahamThin") format("svg"); font-weight: 100; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Abraham'; src: url("/assets/fonts/AbrahamThin.eot"); src: url("/assets/fonts/AbrahamThin.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/AbrahamThin.woff2") format("woff2"), url("/assets/fonts/AbrahamThin.woff") format("woff"), url("/assets/fonts/AbrahamThin.ttf") format("truetype"), url("/assets/fonts/AbrahamThin.svg#AbrahamThin") format("svg"); font-weight: 100; font-style: normal; font-display: swap; }
 
-@font-face { font-family: 'Abraham'; src: url("./fonts/Abraham-Regular.eot"); src: url("./fonts/Abraham-Regular.eot?#iefix") format("embedded-opentype"), url("./fonts/Abraham-Regular.woff2") format("woff2"), url("./fonts/Abraham-Regular.woff") format("woff"), url("./fonts/Abraham-Regular.ttf") format("truetype"), url("./fonts/Abraham-Regular.svg#Abraham-Regular") format("svg"); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Abraham'; src: url("/assets/fonts/Abraham-Regular.eot"); src: url("/assets/fonts/Abraham-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Abraham-Regular.woff2") format("woff2"), url("/assets/fonts/Abraham-Regular.woff") format("woff"), url("/assets/fonts/Abraham-Regular.ttf") format("truetype"), url("/assets/fonts/Abraham-Regular.svg#Abraham-Regular") format("svg"); font-weight: normal; font-style: normal; font-display: swap; }
 
-@font-face { font-family: 'Abraham'; src: url("./fonts/Abraham-Light.eot"); src: url("./fonts/Abraham-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/Abraham-Light.woff2") format("woff2"), url("./fonts/Abraham-Light.woff") format("woff"), url("./fonts/Abraham-Light.ttf") format("truetype"), url("./fonts/Abraham-Light.svg#Abraham-Light") format("svg"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Abraham'; src: url("/assets/fonts/Abraham-Light.eot"); src: url("/assets/fonts/Abraham-Light.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Abraham-Light.woff2") format("woff2"), url("/assets/fonts/Abraham-Light.woff") format("woff"), url("/assets/fonts/Abraham-Light.ttf") format("truetype"), url("/assets/fonts/Abraham-Light.svg#Abraham-Light") format("svg"); font-weight: 300; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Abraham'; src: url("/assets/fonts/Abraham-Bold.eot"); src: url("/assets/fonts/Abraham-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Abraham-Bold.woff2") format("woff2"), url("/assets/fonts/Abraham-Bold.woff") format("woff"), url("/assets/fonts/Abraham-Bold.ttf") format("truetype"), url("/assets/fonts/Abraham-Bold.svg#Abraham-Bold") format("svg"); font-weight: bold; font-style: normal; font-display: swap; }
+
+@font-face { font-family: 'Abraham'; src: url("/assets/fonts/Abraham-Black.eot"); src: url("/assets/fonts/Abraham-Black.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Abraham-Black.woff2") format("woff2"), url("/assets/fonts/Abraham-Black.woff") format("woff"), url("/assets/fonts/Abraham-Black.ttf") format("truetype"), url("/assets/fonts/Abraham-Black.svg#Abraham-Black") format("svg"); font-weight: 900; font-style: normal; font-display: swap; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -48,16 +52,18 @@ section#nachshonim div + img { width: 100%; margin-top: -30%; margin-left: 15%; 
 
 section#contact { background-color: #4D58C3; }
 
-section#contact div:first-child { display: grid; grid-template-areas: "h1 logo" "p logo"; }
+section#contact div:first-child { display: grid; grid-template-areas: "h1 logo" "p logo"; align-items: center; }
 
-section#contact div:first-child h1 { grid-area: h1; }
+section#contact div:first-child h1 { grid-area: h1; font-weight: bold; }
 
-section#contact div:first-child p { grid-area: p; }
+section#contact div:first-child p { grid-area: p; font-size: 1.6rem; }
 
-section#contact div:first-child img { grid-area: logo; }
+section#contact div:first-child img { grid-area: logo; align-self: center; justify-self: center; width: 80%; margin-bottom: 30%; }
 
 section#contact div + div { background: white; }
 
 section#contact div + div form { background: #4D58C3; }
+
+section#contact div + div p { color: #4D58C3; }
 
 /*# sourceMappingURL=main.css.map */

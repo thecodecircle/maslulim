@@ -144,22 +144,35 @@ section#contact{
 		grid-template-areas:
 		"h1 logo"
 		"p logo";
+		align-items: center;
+		// justify-content: center;
 		h1{
 			grid-area: h1;
+			font-weight: bold;
 		}
 		p{
 			grid-area: p;
+			font-size: 1.6rem;
 		}
 		img{
 			grid-area: logo;
+			align-self: center;
+			justify-self: center;
+			width: 80%;
+			margin-bottom: 30%;
+			// margin: auto;
 		}
 	}
 	div + div{
 		background: white;
 
 		form{
-			background: $blue 
+			background: $blue
 		}
+		p{
+			color: $blue
+		}
+
 	}
 }
 // footer{
