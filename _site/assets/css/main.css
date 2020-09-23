@@ -52,18 +52,24 @@ section#nachshonim div + img { width: 100%; margin-top: -30%; margin-left: 15%; 
 
 section#contact { background-color: #4D58C3; }
 
-section#contact div:first-child { display: grid; grid-template-areas: "h1 logo" "p logo"; align-items: center; }
+section#contact > div:first-child { display: grid; grid-template-areas: "h1 logo" "p logo"; align-items: center; }
 
-section#contact div:first-child h1 { grid-area: h1; font-weight: bold; }
+section#contact > div:first-child h1 { grid-area: h1; font-weight: bold; }
 
-section#contact div:first-child p { grid-area: p; font-size: 1.6rem; }
+section#contact > div:first-child p { grid-area: p; font-size: 1.6rem; }
 
-section#contact div:first-child img { grid-area: logo; align-self: center; justify-self: center; width: 80%; margin-bottom: 30%; }
+section#contact > div:first-child img { grid-area: logo; align-self: center; justify-self: center; width: 80%; margin-bottom: 30%; }
 
-section#contact div + div { background: white; }
+section#contact > div + div { background: white; }
 
-section#contact div + div form { background: #4D58C3; }
+section#contact > div + div form { background: #4D58C3; padding: 1rem; border-radius: 1rem; }
 
-section#contact div + div p { color: #4D58C3; }
+section#contact > div + div form div { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, auto); }
+
+section#contact > div + div form div div { display: flex; flex-direction: column; }
+
+section#contact > div + div form div label, section#contact > div + div form div input { display: block; }
+
+section#contact > div + div p { color: #4D58C3; }
 
 /*# sourceMappingURL=main.css.map */

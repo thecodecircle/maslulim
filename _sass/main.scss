@@ -139,7 +139,7 @@ section#nachshonim{
 section#contact{
 	// height: 100vh;
 	background-color: $blue;
-	div:first-child{
+	> div:first-child{
 		display: grid;
 		grid-template-areas:
 		"h1 logo"
@@ -163,11 +163,27 @@ section#contact{
 			// margin: auto;
 		}
 	}
-	div + div{
+	> div + div{
 		background: white;
 
 		form{
-			background: $blue
+			background: $blue;
+			padding: 1rem;
+			border-radius: 1rem;
+			div{
+
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: repeat(4, auto);
+				div{
+					display: flex;
+					flex-direction: column;
+				}
+				label,
+				input{
+					display: block;
+				}
+			}
 		}
 		p{
 			color: $blue
