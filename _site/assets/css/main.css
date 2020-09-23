@@ -42,7 +42,11 @@ section#meshutaf div { background-color: #C14DC3; }
 
 section#social-justice div { background-color: #d03854; }
 
-section#kibbutzi div { background: url("/assets/img/svg/mobile/kibbutzi.svg"); background-color: #4dc367; background-size: cover; background-position: 0 10%; padding-bottom: 50%; }
+section#kibbutzi div { background-color: #4dc367; position: relative; padding-bottom: 50%; }
+
+section#kibbutzi div img { width: 120%; }
+
+section#kibbutzi div + img { width: 100%; margin-top: -40%; }
 
 section#nachshonim div { background-color: #65a6d6; }
 
@@ -50,7 +54,7 @@ section#nachshonim div img { margin-top: -50%; width: 110%; transform: translate
 
 section#nachshonim div + img { width: 100%; margin-top: -30%; margin-left: 15%; align-self: center; }
 
-section#contact { background-color: #4D58C3; }
+section#contact { background-color: #4D58C3; padding-bottom: 5rem; }
 
 section#contact > div:first-child { display: grid; grid-template-areas: "h1 logo" "p logo"; align-items: center; }
 
@@ -62,11 +66,11 @@ section#contact > div:first-child img { grid-area: logo; align-self: center; jus
 
 section#contact > div + div { background: white; }
 
-section#contact > div + div [name="submit"], section#contact > div + div button { margin-top: 1rem; width: 100%; border: none; color: white; background: #4D58C3; border-radius: 3px; font-weight: 500; font-family: "Abraham"; font-size: 2rem; display: flex; justify-content: center; align-items: center; padding: 1rem 0; }
+section#contact > div + div [name="submit"], section#contact > div + div button { margin: 1rem 0; width: 100%; border: none; color: white; background: #4D58C3; border-radius: 3px; font-weight: 500; font-family: "Abraham"; font-size: 2rem; display: flex; justify-content: center; align-items: center; padding: 1rem 0; }
 
 section#contact > div + div [name="submit"] img, section#contact > div + div button img { height: 2rem; }
 
-section#contact > div + div form > div { padding: 1rem 1rem 2rem 1rem; border-radius: 5px; background: #4D58C3; display: grid; grid-gap: 1rem; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, auto); }
+section#contact > div + div form > div { background: #4D58C3; padding: 1rem 1rem 2rem 1rem; border-radius: 5px; display: grid; grid-gap: 1rem; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, auto); }
 
 section#contact > div + div form > div div { display: flex; flex-direction: column; }
 

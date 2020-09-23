@@ -109,16 +109,26 @@ section#social-justice div{
 }
 section#kibbutzi{
 	div{
-		background: url("/assets/img/svg/mobile/kibbutzi.svg");
 		background-color: $green;
-		background-size: cover;
-		background-position: 0 10%;
+		position: relative;
+		// background: url("/assets/img/svg/mobile/kibbutzi.svg");
+		// background-size: cover;
+		// background-position: 0 10%;
 		padding-bottom: 50%;
+		img{
+			// position: absolute;
+			// top: -15%;
+			// left: 0;
+			width: 120%;
+			// margin-top: -83%;
+		}
 	}
-	// img{
-	// 	width: 100%;
-	// 	// transform: translateY(10%);
-	// }
+	div + img{
+		width: 100%;
+		margin-top: -40%;
+		// background: white;
+		// transform: translateY(10%);
+	}
 }
 section#nachshonim{
 	 div{
@@ -139,6 +149,7 @@ section#nachshonim{
 section#contact{
 	// height: 100vh;
 	background-color: $blue;
+	padding-bottom: 5rem;
 	> div:first-child{
 		display: grid;
 		grid-template-areas:
@@ -168,7 +179,7 @@ section#contact{
 
 		[name="submit"],
 		button{
-			margin-top: 1rem;
+			margin: 1rem 0;
 			width: 100%;
 			border: none;
 			color: white;
@@ -188,9 +199,9 @@ section#contact{
 		form{
 			> div{
 
+				background: $blue;
 				padding: 1rem 1rem 2rem 1rem;
 				border-radius: 5px;
-				background: $blue;
 				display: grid;
 				grid-gap: 1rem;
 				grid-template-columns: 1fr 1fr;
