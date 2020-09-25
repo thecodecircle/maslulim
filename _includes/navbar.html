@@ -1,10 +1,35 @@
 <nav>
-	<ul>
-		<li><a href="#"><img src="assets/img/logo/white-logo.svg" alt="logo"></a></li>
-		<li><a href="#">קיום משותף</a></li>
-		<li><a href="#">צדק חברתי</a></li>
-		<li><a href="#">קיבוצי</a></li>
-		<li><a href="#">נחשונים</a></li>
-		<li><a href="#contact">הרשמה</a></li>
-	</ul>
+	<div>
+		<a href="#"><img src="assets/img/logo/white-logo.svg" alt="logo"></a>
+		<button>
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</div>
 </nav>
+<div class="">
+	<a href="#mesutaf">קיום משותף</a>
+	<a href="#social-justice">צדק חברתי</a>
+	<a href="#kibbutzi">קיבוצי</a>
+	<a href="#nachshonim">נחשונים</a>
+	<a href="#contact">הרשמה</a>
+</div>
+
+
+<script type="text/javascript">
+	const menu = document.querySelector("nav + div")
+	const btn = document.querySelector("nav button")
+	btn.addEventListener("click", () => {
+		console.log("btn");
+		menu.classList.toggle("show")
+	})
+	document.addEventListener("click", e => {
+		let target = e.target
+		let children = Array.from(btn.children)
+
+		if (target != menu && target != btn && !children.includes(target)) {
+			menu.classList.remove("show")
+		}
+	})
+</script>

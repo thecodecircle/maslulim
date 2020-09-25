@@ -30,15 +30,81 @@ body {
 
 
 nav{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	top: 0;
 	background: $blue;
+
+	> div:first-child{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 5vw 0 5vw;
+		padding: .5rem 0 0 0;
+		// position: relative;
+		button{
+			background: none;
+			border: none;
+			span{
+				display: block;
+				height: 3px;
+				width: 30px;
+				background: white;
+				margin: 5px 0;
+				border-radius: 1px;
+			}
+
+		}
+	}
+
+	img{
+		width: 50%;
+	}
+
+}
+nav + div{
+	// transform:scale(0);
+	font-size: 2rem;
+	height: 0px;
+	// opacity: 0;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	background: $blue;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	a{
+		// height: 0px;
+		// display: none !important;
+		// display: none;
+		opacity: 0;
+		pointer-events: none;
+		// transform: scale(0);
+		padding: 1rem 0;
+		transition: opacity 100ms;
+
+	}
+	transition: transform 300ms, height 300ms;
+	transform-origin: top;
+	// display: none;
 }
 
-ul{
-	list-style: none;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin: 0 5vw 0 5vw;
+nav + div.show{
+	transform: scale(1);
+	// position: relative;
+	// opacity: 1;
+	height: 30%;
+	// display: flex;
+	a{
+		transition: opacity 300ms  200ms;
+		// height: 100%;
+		transform: scale(1);
+		opacity: 1;
+		pointer-events: all;
+		// display: block;
+	}
 }
 a{
 	color: white;
@@ -62,9 +128,12 @@ section{
 		margin-bottom: 2rem;
 	}
 }
+
+
 section#about{
 	background-color: $blue;
 	padding: 2rem 2rem;
+
 
 	img{
 		width: 60%;
@@ -75,6 +144,7 @@ section#meshutaf,
 section#social-justice,
 section#kibbutzi,
 section#nachshonim,
+section#hero,
 section#contact
 {
 	> div{
@@ -100,6 +170,37 @@ section#contact
 		// right: 0;
 	}
 }
+
+section#hero{
+		margin-top: 4rem;
+	div{
+		padding-bottom: 5px;
+		padding-top: 5px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		// padding-top: 0;
+		button{
+			background: $blue;
+			padding: 1rem;
+			font-size: 2rem;
+			border: none;
+			border-radius: 3px;
+			width: 40%;
+		}
+		p{
+			width: 60%;
+			margin: .7rem 1rem;
+			color: $blue;
+			text-align: center;
+			white-space: pre;
+		}
+	}
+	video{
+		width: 100vw;
+	}
+}
 section#meshutaf	div{
 		background-color: $pink;
 }
@@ -114,8 +215,9 @@ section#kibbutzi{
 		// background: url("/assets/img/svg/mobile/kibbutzi.svg");
 		// background-size: cover;
 		// background-position: 0 10%;
-		padding-bottom: 50%;
+		padding-bottom: 20%;
 		img{
+			margin-top: -30%;
 			// position: absolute;
 			// top: -15%;
 			// left: 0;
@@ -146,6 +248,7 @@ section#nachshonim{
 		align-self: center;
 	}
 }
+
 section#contact{
 	// height: 100vh;
 	background-color: $blue;
