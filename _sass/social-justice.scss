@@ -1,0 +1,57 @@
+section#social-justice {
+	@include desktop {
+		position: relative;
+		img:first-of-type{
+			position: absolute;
+			height: 100%;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+	div:first-of-type{
+	background-color: $red;
+	}
+
+
+	> div:first-of-type{
+		img{
+			margin-top: -20%;
+			transform: translateY(13%);
+
+		}
+		@include desktop {
+			display: flex;
+
+			display: flex;
+			align-items: flex-start;
+			padding-right: 8rem;
+			h1,
+			p{
+				width: 40%;
+				max-width: 500px;
+			}
+			img.desktop{
+				position: absolute;
+				top: 0;
+				width: 50%;
+				left: 0;
+			}
+
+		}
+	}
+	> div:last-of-type{
+
+		img:first-child{
+			width: 110%;
+			margin-top: -40%;
+			align-self: baseline;
+			z-index: 1;
+		}
+	@include desktop {
+		img:last-child{
+			width: 60%;
+		}
+	}
+	}
+}

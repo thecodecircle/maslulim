@@ -1,0 +1,30 @@
+section#hero{
+		margin-top: 4rem;
+	div{
+		padding-bottom: 5px;
+		padding-top: 5px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		// padding-top: 0;
+		button{
+			background: $blue;
+			padding: 1rem;
+			font-size: 2rem;
+			border: none;
+			border-radius: 3px;
+			width: 40%;
+		}
+		p{
+			width: 60%;
+			margin: .7rem 1rem;
+			color: $blue;
+			text-align: center;
+			white-space: pre;
+		}
+	}
+	video{
+		width: 100vw;
+	}
+}

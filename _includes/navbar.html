@@ -1,25 +1,25 @@
 <nav>
 	<div>
 		<a href="#"><img src="assets/img/logo/white-logo.svg" alt="logo"></a>
-		<button>
+		<button class="menu">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
 	</div>
+	<div class="">
+		<a href="#mesutaf">קיום משותף</a>
+		<a href="#social-justice">צדק חברתי</a>
+		<a href="#kibbutzi">קיבוצי</a>
+		<a href="#nachshonim">נחשונים</a>
+		<a href="#contact">הרשמה</a>
+	</div>
 </nav>
-<div class="">
-	<a href="#mesutaf">קיום משותף</a>
-	<a href="#social-justice">צדק חברתי</a>
-	<a href="#kibbutzi">קיבוצי</a>
-	<a href="#nachshonim">נחשונים</a>
-	<a href="#contact">הרשמה</a>
-</div>
 
 
 <script type="text/javascript">
-	const menu = document.querySelector("nav + div")
-	const btn = document.querySelector("nav button")
+	const menu = document.querySelector("div + div")
+	const btn = document.querySelector("div button")
 	btn.addEventListener("click", () => {
 		console.log("btn");
 		menu.classList.toggle("show")

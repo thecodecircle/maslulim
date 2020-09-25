@@ -1,0 +1,56 @@
+section#about{
+	background-color: $blue;
+	padding: 2rem 2rem;
+	div:first-child{
+		@include desktop {
+			z-index: 2;
+			display: grid;
+			grid-template-areas:
+			"h1 logo"
+			"p logo";
+			align-items:center;
+			h1{
+				grid-area: h1;
+
+			}
+			img.about-logo{
+				grid-area: logo;
+				align-self: center;
+				justify-self: center;
+			}
+		}
+		img{
+
+			width: 70%;
+			transform: translateY(0%);
+		}
+		p{
+			grid-area: p;
+			white-space: pre-line;
+		}
+	}
+@include desktop {
+	// flex-direction: row;
+
+}
+
+	div + div {
+		display: none;
+
+		@include desktop {
+			background: white;
+			display: flex;
+			width: 100vw;
+			margin: 0 -2rem -2rem -2rem;
+			padding: 0;
+			position: relative;
+			z-index: 1;
+			img.down-logo{
+				width: 70%;
+				margin-top: -10%;
+				transform: translateY(0.3%) translateX(5%);
+				align-self: baseline;
+			}
+		}
+	}
+}

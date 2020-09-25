@@ -23,25 +23,25 @@
 		<nav>
 	<div>
 		<a href="#"><img src="assets/img/logo/white-logo.svg" alt="logo"></a>
-		<button>
+		<button class="menu">
 			<span></span>
 			<span></span>
 			<span></span>
 		</button>
 	</div>
+	<div class="">
+		<a href="#mesutaf">קיום משותף</a>
+		<a href="#social-justice">צדק חברתי</a>
+		<a href="#kibbutzi">קיבוצי</a>
+		<a href="#nachshonim">נחשונים</a>
+		<a href="#contact">הרשמה</a>
+	</div>
 </nav>
-<div class="">
-	<a href="#mesutaf">קיום משותף</a>
-	<a href="#social-justice">צדק חברתי</a>
-	<a href="#kibbutzi">קיבוצי</a>
-	<a href="#nachshonim">נחשונים</a>
-	<a href="#contact">הרשמה</a>
-</div>
 
 
 <script type="text/javascript">
-	const menu = document.querySelector("nav + div")
-	const btn = document.querySelector("nav button")
+	const menu = document.querySelector("div + div")
+	const btn = document.querySelector("div button")
 	btn.addEventListener("click", () => {
 		console.log("btn");
 		menu.classList.toggle("show")
@@ -57,15 +57,14 @@
 </script>
 
     <section id="hero">
-	<video src="assets/maslulim.webm" autoplay muted loop>
+	<!-- <video src="assets/maslulim.webm" autoplay muted loop>
 
-	</video>
-<!-- <iframe src="https://www.youtube.com/embed/1IBOx0KJ0z4?ecver=1&amp;autoplay=1&amp;iv_load_policy=3&amp;loop=1&amp;rel=0&amp;showinfo=0&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"><div><a  id="fizZb5Ol" href="https://www.twinstiarasandtantrums.com/2020/06/buying-a-mattress-is-a-nightmare/">https://www.twinstiarasandtantrums.com/2020/06/buying-a-mattress-is-a-nightmare/</a></div><div><a  id="fizZb5Ol" href="https://www.mummy2monkeys.co.uk/2020/07/my-review-of-a-hybrid-mattress-since-refunded/">https://www.mummy2monkeys.co.uk/2020/07/my-review-of-a-hybrid-mattress-since-refunded/</a></div><script type="text/javascript">function execute_YTvideo(){return youtube.query({ids:"channel==MINE",startDate:"2019-01-01",endDate:"2019-12-31",metrics:"views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained",dimensions:"day",sort:"day"}).then(function(e){},function(e){console.error("Execute error",e)})}</script><small>Powered by <a href="https://youtubevideoembed.com/ ">Embed YouTube Video</a></small></iframe> -->
+	</video> -->
 
-	<!-- <iframe src="https://www.youtube.com/embed/1IBOx0KJ0z4?controls=0&muted=1&autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  widthaaa="560" height="315" allowfullscreen></iframe> -->
-
-	<!-- <iframe src="https://www.youtube.com/embed/1IBOx0KJ0z4?autoplay=1&loop=1&mute=1&controls=0&autohide=1&rel=0"  height="315" frameborder="0"></iframe> -->
-	<!-- <iframe  height="315" src="https://www.youtube.com/embed/1IBOx0KJ0z4?controls=0&autoplay=1&loop=1&mute=1&autohide=1&rel=0" frameborder="0" allow="loop; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+	<!-- <iframe  height="315"
+	src="https://www.youtube.com/embed/1IBOx0KJ0z4?controls=0&autoplay=1&mute=1&autohide=1&rel=0&showinfo=0&loop=1"
+	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+	 frameborder="0" ></iframe> -->
 	<div class="">
 		<button type="button" name="button">
 			<a href="#contact">הרשמה</a>
@@ -77,14 +76,20 @@
 </section>
 
 <section id="about">
-	<h1>מי אנחנו?</h1>
-	<p>
-		"במקום להילחם בחושך, עלינו להגביר את האור"
-בשומר הצעיר אנחנו מגבירים ומגבירות את האור כבר יותר מ 100 שנה!
-אנחנו מאמינים שיכולה להיות כאן חברה צודקת ושוויונית, שבה לכולם יש מקום.
-בואו לעורר השראה ולהיות דמויות משמעותיות עבור בני ובנות נוער ולעשות חינוך ערכי לתפיסת עולם של צדק, שוויון ואמונה באדם.
-	</p>
-	<img src="assets/img/logo/white-half-logo-text.svg" alt="logo">
+	<div class="">
+		<h1>מי אנחנו?</h1>
+		<p>
+			"במקום להילחם בחושך, עלינו להגביר את האור"
+			בשומר הצעיר אנחנו מגבירים ומגבירות את האור כבר יותר מ 100 שנה!
+			אנחנו מאמינים שיכולה להיות כאן חברה צודקת ושוויונית, שבה לכולם יש מקום.
+			בואו לעורר השראה ולהיות דמויות משמעותיות עבור בני ובנות נוער ולעשות חינוך ערכי לתפיסת עולם של צדק, שוויון ואמונה באדם.
+		</p>
+		<img class="about-logo" src="assets/img/logo/white-half-logo-text.svg" alt="logo">
+
+	</div>
+	<div>
+		<img class="down-logo" src="assets/img/logo/blue-logo.svg" alt="">
+	</div>
 </section>
 
 <section id="meshutaf">
@@ -94,36 +99,51 @@
 			בתוך מציאות של הפרדה וניכור, להצליח להיות במנהיגות ערבית יהודית משותפת וליצור אלטרנטיבה של יחד. עבודה חינוכית בתוך קני התנועה בדגש על יצירת שותפות ומתן כלים ליצירת מפגש.
 הקבוצות בקן עוברות חינוך ערכי על צדק, שוויון ושלום. ונפגשות עם קבוצות של בני ובנות נוער ערביים המצליחות להיות נקודות אור בחברה הישראלית.
 		</p>
-		<img src="assets/img/svg/mobile/meshutaf.svg" alt="קיום משותף איור">
+		<img class="mobile" src="assets/img/svg/mobile/meshutaf.svg" alt="קיום משותף איור">
 	</div>
-	<img src="assets/img/pic/meshutaf.png" alt="קיום משותף תמונה">
+	<div >
+		<img src="assets/img/pic/meshutaf.png" alt="קיום משותף תמונה">
+		<img class="desktop" src="assets/img/svg/desktop/meshutaf.svg" alt="קיום משותף איור">
+
+	</div>
 </section>
 
 <section id="social-justice">
+	<img class="desktop" src="assets/img/pic/social-justice.png" alt="צדק חברתי">
 	<div class="">
 		<h1>מסלול צדק חברתי</h1>
 		<p>
 			עבודה חינוכית ואקטיביסטית בקני התנועה בירושלים(משהו מגניב לתאר את ירושלים כעיר אקטיביסטית, שקורה בה הרבה…)
 	בקנים הנערים והנערות מתחנכים/ות בקבוצות אינטימיות והן מקום ליצירת קשרים משמעותיים ותרבות נעורים אחרת. דרך חשיפה לתכנים על המציאות (-לא בטוחה במשפט הזה..) החניכים יוצאים כדי לשנות את מה שחשוב להם בשכונה ובחברה.
 		</p>
-		<img src="assets/img/svg/mobile/social-justice.svg" alt="איור צדק חברתי">
+		<img class="mobile" src="assets/img/svg/mobile/social-justice.svg" alt="איור צדק חברתי">
 	</div>
-	<img src="assets/img/pic/mobile/social-justice.png" alt="צדק חברתי">
+	<div class="">
+		<img class="mobile" src="assets/img/pic/mobile/social-justice.png" alt="צדק חברתי">
+		<img class="desktop" src="assets/img/svg/desktop/social-justice.svg" alt="צדק חברתי">
+	</div>
 </section>
 
 <section id="kibbutzi">
+	<img class="desktop" src="assets/img/pic/kibbutzi.png" alt="קיבוצי">
 	<div class="">
 		<h1>מסלול קיבוצי</h1>
 		<p>
 			עבודה חינוכית וחלוצית בקיבוצי התנועה בפריפריה.
 קיבוצי השומר הצעיר קמו במטרה לחיות אורח חיים ציוני,שיתופי בזיקה לטבע בארץ ישראל, ואנחנו ממשיכי דרכם.
 		</p>
-		<img src="assets/img/svg/mobile/kibbutzi.svg" alt="איור צדק חברתי">
+		<img class="mobile" src="assets/img/svg/mobile/kibbutzi.svg" alt="קיבוצי">
 	</div>
-	<img src="assets/img/pic/kibbutzi.png" alt="קיבוצי">
+	<div class="">
+		<img class="mobile" src="assets/img/pic/mobile/kibbutzi.png" alt="קיבוצי">
+		<img class="desktop" src="assets/img/svg/desktop/kibbutzi.svg" alt="קיבוצי">
+
+	</div>
+
 </section>
 
 <section id="nachshonim">
+	<img class="desktop" src="assets/img/pic/nachshonim.png" alt="נחשונים">
 	<div>
 		<h1>מסלול נחשונים</h1>
 		<p>
@@ -131,18 +151,29 @@
 הילדים מגיעים לנחשונים אחר הצהריים ושם הם פוגשים דמויות חינוכיות משמעותיות אשר מלוות אותם לאורך השנים ומעבירות להם חינוך ערכי שמטרתו היא מתן כלים להתפתחות החניכים.
 הפעילות בבתי הנוער מתקיימת באופן חווייתי- קבוצות, משחקים, יצירה, טיולים, למידה חווייתית, סיורים, סדנאות וחוגים.
 		</p>
-		<img src="assets/img/svg/mobile/nachshonim.svg" alt="איור צדק חברתי">
+		<img class="mobile" src="assets/img/svg/mobile/nachshonim.svg" alt="נחשונים">
 	</div>
-	<img src="assets/img/pic/nachshonim.png" alt="צדק חברתי">
+	<div class="">
+		<img class="mobile" src="assets/img/pic/nachshonim.png" alt="נחשונים">
+		<img class="desktop" src="assets/img/svg/desktop/nachshonim.svg" alt="נחשונים">
+	</div>
 </section>
 
 <section id="contact">
 	<div>
 		<h1>הרשמה</h1>
-		<p>מעוניינים/ות באת המסלולים?
+		<p>מעוניינים/ות באחד המסלולים? <br>
 		השאירו פרטי ונחזור אליכם/ן</p>
-		<img src="assets/img/logo/white-half-logo-no-text.svg" alt="לוגו המסלולים">
+		<img class="mobile" src="assets/img/logo/white-half-logo-no-text.svg" alt="לוגו המסלולים">
+		<img class="desktop" src="assets/img/logo/blue-logo-text.svg" alt="לוגו המסלולים">
+		<button class="desktop-btn" type="button" name="button">
+			<a href="">
+				<img src="assets/img/whatsapp-blue.svg" alt="whatsapp logo">
+				<span>שלחו הודעה</span>
+			</a>
+		</button>
 	</div>
+	<div class="desktop"></div>
 	<div>
 		<form action="index.html" method="post">
 			<div class="">
@@ -173,8 +204,12 @@
 			</div>
 			<input type="submit" name="submit" value="הרשמה" >
 		</form>
-		<p>או שלחו לנו הודעה</p>
-		<button type="button" name="button"><a href=""><img src="assets/img/whatsapp.svg" alt="whatsapp logo"></a></button>
+		<button class="mobile" type="button" name="button">
+			<a href="">
+				<img src="assets/img/whatsapp-blue.svg" alt="whatsapp logo">
+				<span>שלחו הודעה</span>
+			</a>
+		</button>
 	</div>
 </section>
 

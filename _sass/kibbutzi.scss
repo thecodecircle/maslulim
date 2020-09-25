@@ -1,0 +1,55 @@
+
+
+
+section#kibbutzi{
+	@include desktop {
+		position: relative;
+		img:first-of-type{
+			position: absolute;
+			height: 100%;
+			right: 0;
+			z-index: 1;
+		}
+
+	}
+	div:first-of-type{
+		background-color: $green;
+		position: relative;
+
+		@include desktop {
+			display: flex;
+			align-items: flex-end;
+			padding-left: 8rem;
+			h1,
+			p{
+				width: 40%;
+				max-width: 500px;
+			}
+
+		}
+		img{
+			margin-top: -20%;
+			// position: absolute;
+			// top: -15%;
+			// left: 0;
+			width: 120%;
+			// background: white;
+			background-position: 10% 10%;
+			// background-size: auto;
+			// margin-top: -83%;
+		}
+	}
+	div:last-of-type{
+		img{
+			width: 100%;
+			margin-top: -50%;
+			@include desktop{
+				margin-top: -35%;
+				z-index: -1;
+			}
+			// background: white;
+			// transform: translateY(10%);
+		}
+
+	}
+}

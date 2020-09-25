@@ -1,0 +1,32 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+
+}
+
+
+a{
+	color: white;
+	text-decoration: none;
+}
+h1{
+	@include desktop{
+		font-size: 5rem !important;
+	}
+}
+p{
+	font-size: 2rem !important;
+}
