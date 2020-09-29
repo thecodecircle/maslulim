@@ -16,7 +16,7 @@ section#about{
 			img.about-logo{
 				grid-area: logo;
 				align-self: center;
-				justify-self: center;
+				justify-self: flex-end;
 			}
 		}
 		img{

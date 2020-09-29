@@ -7,14 +7,17 @@
 html{
 	scroll-behavior: smooth;
 	font-size: 62.5%;
-	// overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
-
+	overflow-x: hidden;
+	> div:first-child{
+		overflow-x: hidden;
+	}
 }
 
 
