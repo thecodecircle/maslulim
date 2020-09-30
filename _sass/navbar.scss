@@ -7,7 +7,10 @@ nav{
 	top: 0;
 	right: 0;
 	background: $blue;
+	// border-bottom: 3px solid white;
+
 	@include desktop {
+		border-bottom: none;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -15,12 +18,22 @@ nav{
 		height: 7vh;
 	}
 	> div:first-child{
+		border-bottom: 3px solid white;
+		@include desktop{
+			border-bottom: 3px solid white;
+			width: 10%;
+			height: 100%;
+			margin: 0;
+			padding-right: 2rem;
+			min-width: 150px
+		};
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		margin: 0 5vw 0 5vw;
-		padding: .5rem 0 0 0;
+		// margin: 0 5vw 0 5vw;
+		padding: .5rem 5vw 0 5vw;
 		// position: relative;
+		background: $blue;
 		button.menu{
 			background: none;
 			border: none;
@@ -37,15 +50,28 @@ nav{
 			}
 
 		}
-	}
+		> a{
+			// position: relative;
+			@include desktop{
+				height: 100%;
+			}
 
-	img{
-		width: 50%;
-		margin-top: 4%;
-		@include desktop {
-			width: 100%;
+				img{
+					width: 50%;
+					margin-top: 4%;
+					// position: absolute;
+					// bottom: 0;
+					display: block;
+					@include desktop {
+						margin-top: 0%;
+						height: 100%;
+						width: auto;
+
+					}
+				}
 		}
 	}
+
 
 }
 nav div + div{
@@ -65,19 +91,17 @@ nav div + div{
 		height: 100%;
 		position: relative;
 		justify-content: space-between;
-		padding: 0 3vw;
+		// padding: 0 3vw;
 
    }
-	a{
-		// height: 0px;
-		// display: none !important;
-		// display: none;
+	> a{
 		opacity: 0;
 		pointer-events: none;
-		// transform: scale(0);
 		padding: 1rem 0;
 		transition: opacity 100ms;
 		@include desktop {
+			border-bottom: 3px solid white;
+			width: 100%;
 			transform: scale(1);
 			opacity: 1;
 			pointer-events: all;
@@ -85,11 +109,54 @@ nav div + div{
 			padding: 0 3rem;
 			display: flex;
 			align-items: center;
+			justify-content: center;
 	   }
+
+
+		 button{
+			 background: white;
+			 font-size: 2rem;
+			 border: 2px solid white;
+			 padding: 1rem 2rem;
+			 border-radius: 3px;
+			 color: $blue;
+			 font-weight: bold;
+			 cursor: pointer;
+
+		 }
 	}
-	a:last-child{
+	> a:hover{
+		background: white;
+		color: $blue;
+		@include desktop{
+			border-bottom: 3px solid $blue;
+
+		};
+		transition: background 200ms, border 200ms;
+	}
+	> a:last-child:hover{
+		color: $blue;
+		background: $blue;
+		@include desktop{
+			border-bottom: 3px solid white;
+
+		};
 		// border: 1px solid white;
+
 	}
+	button:hover{
+		background: $blue;
+		color: white;
+		border: 2px solid white;
+		// transform: translateY(-3px);
+
+		transition: background 100ms ;
+	}
+	// > a:last-child:hover{
+	// 	// background: $blue;
+	// 	// color: white;
+	// 	// border-bottom: 3px solid white;
+	// }
 	transition: transform 300ms, height 300ms;
 	transform-origin: top;
 	// display: none;
@@ -99,10 +166,12 @@ div + div.show{
 	transform: scale(1);
 	// position: relative;
 	// opacity: 1;
-	height: 30%;
+	height: 30vh;
 	// display: flex;
+	justify-content: space-between;
+	padding: 1rem 0;
 	a{
-		transition: opacity 300ms  200ms;
+		transition: opacity 300ms 200ms;
 		// height: 100%;
 		transform: scale(1);
 		opacity: 1;
@@ -110,3 +179,7 @@ div + div.show{
 		// display: block;
 	}
 }
+
+// div + div.auto{
+// 	height: auto;
+// }

@@ -26,9 +26,11 @@ p { font-size: 2rem !important; }
 
 nav { position: fixed; z-index: 5; width: 100%; height: 50px; top: 0; right: 0; background: #4D58C3; }
 
-@media (min-width: 900px) { nav { display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 7vh; } }
+@media (min-width: 900px) { nav { border-bottom: none; display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 7vh; } }
 
-nav > div:first-child { display: flex; align-items: center; justify-content: space-between; margin: 0 5vw 0 5vw; padding: .5rem 0 0 0; }
+nav > div:first-child { border-bottom: 3px solid white; display: flex; align-items: center; justify-content: space-between; padding: .5rem 5vw 0 5vw; background: #4D58C3; }
+
+@media (min-width: 900px) { nav > div:first-child { border-bottom: 3px solid white; width: 10%; height: 100%; margin: 0; padding-right: 2rem; min-width: 150px; } }
 
 nav > div:first-child button.menu { background: none; border: none; }
 
@@ -36,21 +38,35 @@ nav > div:first-child button.menu { background: none; border: none; }
 
 nav > div:first-child button.menu span { display: block; height: 3px; width: 30px; background: white; margin: 5px 0; border-radius: 1px; }
 
-nav img { width: 50%; margin-top: 4%; }
+@media (min-width: 900px) { nav > div:first-child > a { height: 100%; } }
 
-@media (min-width: 900px) { nav img { width: 100%; } }
+nav > div:first-child > a img { width: 50%; margin-top: 4%; display: block; }
+
+@media (min-width: 900px) { nav > div:first-child > a img { margin-top: 0%; height: 100%; width: auto; } }
 
 nav div + div { font-size: 2rem; height: 0px; display: flex; flex-direction: column; position: fixed; background: #4D58C3; z-index: 2; width: 100%; text-align: center; transition: transform 300ms, height 300ms; transform-origin: top; }
 
-@media (min-width: 900px) { nav div + div { flex-direction: row; height: 100%; position: relative; justify-content: space-between; padding: 0 3vw; } }
+@media (min-width: 900px) { nav div + div { flex-direction: row; height: 100%; position: relative; justify-content: space-between; } }
 
-nav div + div a { opacity: 0; pointer-events: none; padding: 1rem 0; transition: opacity 100ms; }
+nav div + div > a { opacity: 0; pointer-events: none; padding: 1rem 0; transition: opacity 100ms; }
 
-@media (min-width: 900px) { nav div + div a { transform: scale(1); opacity: 1; pointer-events: all; height: 100%; padding: 0 3rem; display: flex; align-items: center; } }
+@media (min-width: 900px) { nav div + div > a { border-bottom: 3px solid white; width: 100%; transform: scale(1); opacity: 1; pointer-events: all; height: 100%; padding: 0 3rem; display: flex; align-items: center; justify-content: center; } }
 
-div + div.show { transform: scale(1); height: 30%; }
+nav div + div > a button { background: white; font-size: 2rem; border: 2px solid white; padding: 1rem 2rem; border-radius: 3px; color: #4D58C3; font-weight: bold; cursor: pointer; }
 
-div + div.show a { transition: opacity 300ms  200ms; transform: scale(1); opacity: 1; pointer-events: all; }
+nav div + div > a:hover { background: white; color: #4D58C3; transition: background 200ms, border 200ms; }
+
+@media (min-width: 900px) { nav div + div > a:hover { border-bottom: 3px solid #4D58C3; } }
+
+nav div + div > a:last-child:hover { color: #4D58C3; background: #4D58C3; }
+
+@media (min-width: 900px) { nav div + div > a:last-child:hover { border-bottom: 3px solid white; } }
+
+nav div + div button:hover { background: #4D58C3; color: white; border: 2px solid white; transition: background 100ms; }
+
+div + div.show { transform: scale(1); height: 30vh; justify-content: space-between; padding: 1rem 0; }
+
+div + div.show a { transition: opacity 300ms 200ms; transform: scale(1); opacity: 1; pointer-events: all; }
 
 section { display: flex; flex-direction: column; position: relative; color: white; }
 
@@ -140,21 +156,25 @@ section#nachshonim div:last-of-type img { width: 100%; margin-top: -20%; margin-
 
 section#contact { background-color: #4D58C3; }
 
-@media (min-width: 900px) { section#contact { background-color: #4D58C3; flex-direction: row; height: 50vh; margin-bottom: 100px; } section#contact div.desktop { background-color: white; position: absolute; height: 25vh; width: 100%; bottom: 0; z-index: 0; } section#contact * { z-index: 1; } }
+@media (min-width: 900px) { section#contact { background-color: #4D58C3; flex-direction: row; height: 70vh; } section#contact div.desktop { background-color: white; position: absolute; height: 35vh; width: 100%; bottom: 0; z-index: 0; } section#contact * { z-index: 1; } }
 
 section#contact > div:first-of-type { display: grid; grid-template-areas: "h1 logo" "p logo"; align-items: center; }
 
-@media (min-width: 900px) { section#contact > div:first-of-type { display: flex; flex-direction: column; width: 45%; justify-content: space-between; margin: 2rem auto 0 auto; padding-bottom: 0; height: 100%; } }
+@media (min-width: 900px) { section#contact > div:first-of-type { display: flex; flex-direction: column; max-width: 600px; width: 45%; justify-content: space-between; padding: 2rem auto 0 auto; margin: 0 auto; height: 100%; } }
 
 section#contact > div:first-of-type h1 { grid-area: h1; font-weight: bold; }
 
 section#contact > div:first-of-type p { grid-area: p; font-size: 1.6rem; }
 
+@media (min-width: 900px) { section#contact > div:first-of-type p { margin: 0; } }
+
 section#contact > div:first-of-type > img { grid-area: logo; align-self: center; justify-self: center; width: 80%; margin-bottom: 0%; }
+
+@media (min-width: 900px) { section#contact > div:first-of-type > img { height: 40%; } }
 
 section#contact > div:last-of-type { padding: 2rem; background: white; }
 
-@media (min-width: 900px) { section#contact > div:last-of-type { margin: 2rem auto; background: none; height: 100%; } }
+@media (min-width: 900px) { section#contact > div:last-of-type { margin: 0rem auto 0 auto; background: none; height: 100%; } }
 
 section#contact > div:last-of-type form { /* Firefox */ }
 
@@ -162,7 +182,7 @@ section#contact > div:last-of-type form { /* Firefox */ }
 
 section#contact > div:last-of-type form > div { background: #4D58C3; padding: 1rem 1rem 2rem 1rem; border-radius: 5px; display: grid; grid-gap: 1rem; grid-template-columns: 1fr 1fr; grid-template-rows: repeat(4, auto); }
 
-@media (min-width: 900px) { section#contact > div:last-of-type form > div { height: 100%; row-gap: 0px; } }
+@media (min-width: 900px) { section#contact > div:last-of-type form > div { height: 80%; row-gap: 0px; } }
 
 section#contact > div:last-of-type form > div div { display: flex; flex-direction: column; height: 100%; }
 
@@ -194,6 +214,8 @@ section#contact [name="submit"], section#contact button { margin: 1rem 0; width:
 
 @media (min-width: 900px) { section#contact [name="submit"], section#contact button { padding: 0rem 0; height: 50px; margin-top: 1rem; margin-bottom: 0; font-size: 3rem; } }
 
+@media (min-width: 900px) { section#contact [name="submit"] { position: absolute; bottom: 0; } }
+
 section#contact button { background: none; border: 2px solid #4D58C3; }
 
 section#contact button a { color: #4D58C3; display: flex; align-items: center; }
@@ -202,7 +224,7 @@ section#contact button a span { padding: 0 1rem; }
 
 section#contact button img { height: 2rem; }
 
-@media (min-width: 900px) { section#contact button { margin-top: 50px; } section#contact button img { height: 3rem; } }
+@media (min-width: 900px) { section#contact button img { height: 3rem; } }
 
 footer { height: 100px; background: red; }
 

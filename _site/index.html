@@ -31,11 +31,15 @@
 		</button>
 	</div>
 	<div class="">
-		<a href="#mesutaf">קיום משותף</a>
+		<a href="#meshutaf">קיום משותף</a>
 		<a href="#social-justice">צדק חברתי</a>
 		<a href="#kibbutzi">קיבוצי</a>
 		<a href="#nachshonim">נחשונים</a>
-		<a href="#contact">הרשמה</a>
+		<a href="#contact">
+		<button type="button" name="button">
+				הרשמה
+		</button>
+	</a>
 	</div>
 </nav>
 
@@ -46,6 +50,9 @@
 	btn.addEventListener("click", () => {
 		console.log("btn");
 		menu.classList.toggle("show")
+		// setTimeout(function () {
+		// 		menu.classList.toggle("auto")
+		// }, 200);
 	})
 	document.addEventListener("click", e => {
 		let target = e.target
