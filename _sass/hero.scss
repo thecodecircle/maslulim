@@ -1,8 +1,17 @@
 section#hero{
-		margin-top: 50px;
+	// position: absolute;
+	// z-index: 10;
+	// bottom: 0;
+	// width: 100vw;
+	// // height: 5vh;
+	background: white;
+	@include desktop{
+		margin-top: -30vh;
+
+	};
 	div:first-of-type{
 		@include desktop{
-			padding: 2rem	10vw;
+			padding: 0 10vw;
 			flex-direction: row-reverse;
 		};
 		padding-bottom: 5px;
@@ -42,12 +51,5 @@ section#hero{
 			// white-space: pre;
 		}
 	}
-	video{
-		width: 100vw;
-	}
-}
-iframe{
-	// @include desktop{
-		height: 70vh;
-	// }
+
 }

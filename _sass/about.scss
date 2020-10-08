@@ -1,6 +1,7 @@
 section#about{
 	background-color: $blue;
 	padding: 2rem 2rem;
+	// margin-top: 23vh;
 	@include desktop {
 		display: flex;
 		flex-direction: column;
@@ -33,6 +34,7 @@ section#about{
 				max-width: 800px;
 			};
 		}
+
 		h1{
 			grid-area: h1;
 		}
@@ -43,9 +45,9 @@ section#about{
 				justify-self: center;
 				display: block;
 				width: 90%;
-				align-self: flex-start;
 			};
 		}
+
 
 	}
 

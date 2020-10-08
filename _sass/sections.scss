@@ -3,7 +3,6 @@ section{
 	flex-direction: column;
 	position: relative;
 	color: white;
-
 	@include desktop{
 		// padding: 0 100px;
 	};
@@ -61,7 +60,7 @@ section#contact
 		> img{
 			width: 120%;
 			align-self: center;
-			transform: translateY(10%);
+			// transform: translateY(10%);
 
 		}
 		h1,

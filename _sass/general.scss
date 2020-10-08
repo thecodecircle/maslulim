@@ -45,3 +45,33 @@ hr{
 
 	};
 }
+.enter-left,
+.enter-right,
+.enter-top{
+	transition: transform 500ms, opacity 500ms;
+	opacity: 0
+
+}
+.enter-left{
+	transform: translateX(-100px);
+}
+.enter-right{
+	transform: translateX(100px);
+}
+.enter-top{
+	transform: translateY(-100px);
+
+}
+
+.in-view{
+	transform: translate(0,0);
+	opacity: 1;
+}
+.none{
+	display: none !important;
+}
+// #vimeo,
+iframe{
+	margin-top: 50px;
+
+}
