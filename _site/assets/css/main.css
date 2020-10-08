@@ -80,7 +80,7 @@ nav div + div > a:last-child:hover { color: #4D58C3; background: #4D58C3; }
 
 nav div + div button:hover, nav div + div button:focus { box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.3); transform: translateY(-3px); }
 
-div + div.show { transform: scale(1); height: 30vh; justify-content: space-between; padding: 1rem 0; }
+div + div.show { transform: scale(1); height: 30rem; justify-content: space-between; padding: 1rem 0; }
 
 div + div.show a { transition: opacity 300ms 200ms; transform: scale(1); opacity: 1; pointer-events: all; }
 
@@ -286,7 +286,7 @@ section#contact a.desktop-btn { display: none; }
 
 @media (min-width: 900px) { section#contact a.desktop-btn { display: flex; } }
 
-footer { height: 4vh; background: #4D58C3; color: white; font-size: 2rem; display: flex; align-items: center; justify-content: center; }
+footer { height: 30px; width: 100vw; background: #4D58C3; color: white; font-size: 2rem; display: flex; align-items: center; justify-content: center; }
 
 footer a { display: flex; align-items: center; justify-content: center; transition: box-shadow 100ms; }
 
