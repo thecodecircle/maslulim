@@ -70,8 +70,19 @@ hr{
 .none{
 	display: none !important;
 }
-// #vimeo,
+#vimeo{
+	height: 60vh;
+	@include desktop{
+		height: auto;
+	};
+}
 iframe{
 	margin-top: 50px;
+	width: 200vw;
+	left: -50%;
+	@include desktop{
 
+		width: 100%;
+		left: 0;
+	};
 }
