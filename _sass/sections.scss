@@ -4,15 +4,26 @@ section{
 	position: relative;
 	color: white;
 
-
+	@include desktop{
+		// padding: 0 100px;
+	};
 	h1{
-		font-size: 3rem;
+		font-size: 5rem;
 		margin-bottom: 1rem;
 	}
-	p{
+	p,
+	ul{
 		font-size: 2rem;
 		line-height: 1.5;
 		margin-bottom: 2rem;
+	}
+	ul{
+		list-style: inside;
+		z-index: 1;
+		@include desktop{
+			width: 40%;
+			max-width: 500px;
+		};
 	}
 }
 .desktop{
@@ -35,15 +46,16 @@ section#nachshonim,
 section#hero,
 section#contact
 {
+	scroll-margin-top: 50px;
 	> div:first-of-type{
-		padding: 2rem 2rem 0 2rem;
+		padding: 2rem 2vw 0 2vw;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		@include desktop {
 			display: flex;
 			justify-content: center;
-			padding: 2rem;
+			padding: 2rem	10vw;
 			min-height: 30vh;
 		}
 		> img{
@@ -52,7 +64,14 @@ section#contact
 			transform: translateY(10%);
 
 		}
+		h1,
+		p{
+			@include desktop{
+				width: 40%;
+				max-width: 500px;
 
+			};
+		}
 	}
 	> div:last-of-type{
 		img{

@@ -27,9 +27,21 @@ a{
 }
 h1{
 	@include desktop{
-		font-size: 5rem !important;
+		font-size: 5rem;
 	}
 }
 p{
-	font-size: 2rem !important;
+	// font-size: 2rem !important;
+}
+hr{
+	background: white;
+	height: 7px;
+	margin-bottom: 2rem;
+	border: none;
+	// z-index: 9;
+	@include desktop{
+		width: 40%;
+		max-width: 500px;
+
+	};
 }

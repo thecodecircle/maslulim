@@ -3,14 +3,9 @@ section#meshutaf{
 	 > div:first-of-type{
 		background-color: $pink;
 		@include desktop {
-			
+
 			align-items: flex-end;
-			padding-left: 8rem;
-			h1,
-			p{
-				width: 40%;
-				max-width: 500px;
-			}
+
 		}
 	}
 	> div:last-of-type{

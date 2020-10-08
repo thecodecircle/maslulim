@@ -122,6 +122,7 @@ nav div + div{
 			 color: $blue;
 			 font-weight: bold;
 			 cursor: pointer;
+			 transition: box-shadow 100ms, transform 100ms;
 
 		 }
 	}
@@ -144,22 +145,15 @@ nav div + div{
 		// border: 1px solid white;
 
 	}
-	button:hover{
-		background: $blue;
-		color: white;
-		border: 2px solid white;
-		// transform: translateY(-3px);
+	button:hover,
+	button:focus{
 
-		transition: background 100ms ;
+		box-shadow: 0px 4px 2px 1px rgba(0,0,0,0.3);
+		transform: translateY(-3px);
+
 	}
-	// > a:last-child:hover{
-	// 	// background: $blue;
-	// 	// color: white;
-	// 	// border-bottom: 3px solid white;
-	// }
 	transition: transform 300ms, height 300ms;
 	transform-origin: top;
-	// display: none;
 }
 
 div + div.show{

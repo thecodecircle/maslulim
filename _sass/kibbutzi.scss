@@ -19,16 +19,12 @@ section#kibbutzi{
 		@include desktop {
 			display: flex;
 			align-items: flex-end;
-			padding-left: 8rem;
-			h1,
-			p{
-				width: 40%;
-				max-width: 500px;
-			}
+			// padding-left: 8rem;
+
 
 		}
 		img{
-			margin-top: -20%;
+			margin-top: 0%;
 			// position: absolute;
 			// top: -15%;
 			// left: 0;
@@ -41,8 +37,9 @@ section#kibbutzi{
 	}
 	div:last-of-type{
 		img{
-			width: 100%;
-			margin-top: -50%;
+			width: 90%;
+			margin-top: -30%;
+			margin-right: 10%;
 			@include desktop{
 				margin-top: -35%;
 				z-index: -1;
