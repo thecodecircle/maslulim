@@ -100,6 +100,7 @@ nav div + div{
 		padding: 1rem 0;
 		transition: opacity 100ms;
 		@include desktop {
+			position: relative;
 			border-bottom: 3px solid white;
 			width: 100%;
 			transform: scale(1);
@@ -114,16 +115,24 @@ nav div + div{
 
 
 		 button{
-			 background: white;
 			 font-size: 2rem;
+			 background: white;
 			 border: 2px solid white;
-			 padding: 1rem 2rem;
+			 padding: 0.5rem 2rem;
 			 border-radius: 3px;
 			 color: $blue;
 			 font-weight: bold;
 			 cursor: pointer;
 			 transition: box-shadow 100ms, transform 100ms;
-
+			 @include desktop{
+				 background: white;
+				 border: white;
+				 color: $blue;
+				 // position: absolute;
+				 // bottom: 0;
+				 // border-radius: 3px 3px 0 0;
+				 // padding: 1rem 2rem 2rem 2rem;
+			 };
 		 }
 	}
 	> a:hover{
@@ -135,10 +144,16 @@ nav div + div{
 		};
 		transition: background 200ms, border 200ms;
 	}
+	// > a:last-child{
+	// 	border: 3px white solid;
+	// 	// box-shadow: 1px 1
+	// }
 	> a:last-child:hover{
 		color: $blue;
 		background: $blue;
 		@include desktop{
+			color: $blue;
+			background: initial;
 			border-bottom: 3px solid white;
 
 		};
