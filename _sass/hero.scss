@@ -12,11 +12,11 @@ section#hero{
 	div:first-of-type{
 		@include desktop{
 			padding: 0 10vw;
-			flex-direction: row-reverse;
+			flex-direction: row;
 		};
 		padding: 2rem;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		// padding-top: 0;
@@ -27,11 +27,14 @@ section#hero{
 			font-weight: bold;
 			border: none;
 			border-radius: 3px;
-			width: 40%;
+			width: 100%;
 			text-align: center;
 			transition: background 200ms, box-shadow 100ms;
+			// align-self: flex-end;
 			@include desktop{
+				// align-self: center;
 				width: 20%;
+				font-size: 3rem;
 			};
 
 		}
@@ -43,10 +46,15 @@ section#hero{
 			color: $blue;
 		}
 		p{
-			width: 50%;
-			margin: .7rem 1rem;
+			width: 100%;
+			// margin: .7rem 1rem;
 			color: $blue;
 			text-align: right;
+			@include desktop{
+				width: 50%;
+				font-size: 3rem;
+				margin: 0;
+			};
 			// white-space: pre;
 		}
 	}
