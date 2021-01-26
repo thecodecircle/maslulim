@@ -6,7 +6,7 @@
     <title>מסלולים</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <meta property="og:title" content="המסלולים - שנת שירות השומר הצעיר" />
-    <meta property="og:description" content="אחלה שנת שירות שבעולם" />
+    <meta property="og:description" content="שנת השירות הכי מגניבה!" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="/assets/img/logo/og.jpg" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -18,6 +18,15 @@
 
       gtag('config', '???');
     </script> -->
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180994092-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-180994092-1');
+	</script>
   </head>
   <body>
 		<div class="">
@@ -80,7 +89,7 @@
 	<div class="">
 		<p>"השנה הזאת גרמה לי לרצות לשנות! <br>
 			זאת  הייתה השנה הכי מאתגרת ומיוחדת שחוויתי"
-			(אריקה קוגן)</p>
+			(אריקה קוגן, מנהריה, גרעין פילה)</p>
 			<a href="#contact">הרשמה</a>
 		</div>
 </section>
@@ -154,7 +163,7 @@
 	<div class="">
 		<h1 data-scroll="80" class="enter-left">מסלול קיבוצי</h1>
 		<p data-scroll="80" class="enter-left">אם את\ה מחפש שנה של עשייה קהילתית, חלוצית וחינוכית זה המקום בשבילך!
-בואו להדריך ולחנך בקיבוצי התנועה בפריפריה.
+בואו להדריך ולחנך בקיבוצי התנועה <strong>בעוטף עזה.</strong>
 קיבוצי השומר הצעיר קמו במטרה לחיות אורח חיים ציוני,שיתופי בזיקה לטבע בארץ ישראל, ואנחנו ממשיכי דרכם. בואו לעבוד עם הנוער, הקהילה והטבע.
 		</p>
 		<hr>
@@ -247,7 +256,7 @@
 	<div>
 		<h1 >הרשמה</h1>
 		<p>מעוניינים/ות באחד המסלולים? <br>
-		השאירו פרטי ונחזור אליכם/ן</p>
+		השאירו פרטים ונחזור אליכם/ן</p>
 		<img class="mobile" src="assets/img/logo/white-half-logo-no-text.svg" alt="לוגו המסלולים">
 		<img class="desktop" src="assets/img/logo/blue-logo-text.svg" alt="לוגו המסלולים">
 
@@ -269,23 +278,34 @@
 		<form   data-scroll="80" class="enter-top"  target="hidden_iframe" onsubmit="submitted=true;"
 		action="https://docs.google.com/forms/d/e/1FAIpQLSf0kWRC8H1FSnL6ZJLl26aaFbfVYRbQvdJRaGdpRjIXhgTbTA/formResponse" method="post">
 			<div class="">
-				<div class="">
+				<div class="name">
 					<label for="name">שם</label>
 					<input type="text" name="entry.714759491" value="" required>
 				</div>
-				<div class="">
-					<label for="address">כתובת</label>
+				<div class="city">
+					<label for="address">ישוב</label>
 					<input type="text" name="entry.1191809233" value="" required>
 				</div>
-				<div class="">
+				<div class="gender">
+					<label for="gender">מין</label>
+					<select name="entry.1576153701" value="" required>
+						<option disabled selected value></option>
+					  <option value="נקבה">נקבה</option>
+					  <option value="זכר">זכר</option>
+					  <option value="אחר">אחר</option>
+					</select>
+					<!-- <input type="select" name="entry.1437768934" value="" required> -->
+				</div>
+				<div class="phone">
 					<label for="entry.1846822510">טלפון</label>
 					<input type="number" name="entry.1846822510" value="" required>
 				</div>
-				<div class="">
+				<div class="mail">
 					<label for="email">מייל</label>
 					<input type="email" name="entry.866560517" value="" required>
 				</div>
-				<div class="">
+
+				<div class="most">
 					<label for="interesting">המסלול שהכי מעניין אותי</label>
 					<select name="entry.1437768934" value="" required>
 						<option disabled selected value></option>
@@ -296,7 +316,7 @@
 					</select>
 					<!-- <input type="select" name="entry.1437768934" value="" required> -->
 				</div>
-				<div class="">
+				<div class="other">
 					<label for="second-interesting">מסלול נוסף שמעניין אותי</label>
 					<select name="entry.1192345231"  >
 						<option disabled selected value></option>

@@ -104,7 +104,7 @@ section#contact{
 			@include desktop{
 				height: 100%;
 				position: relative;
-				// max-height: 500px;
+				max-width: 600px;
 			}
 			// padding: 2rem;
 			> div{
@@ -117,14 +117,27 @@ section#contact{
 				padding: 1rem 1rem 2rem 1rem;
 				border-radius: 5px;
 				display: grid;
-				grid-gap: 1rem;
-				grid-template-columns: 1fr 1fr;
+				column-gap: 1.5rem;
+				row-gap: 3rem;
+				grid-template-columns:  repeat(6, 1fr);
 				grid-template-rows: repeat(4, auto);
+				// grid-template-areas:
+        //     "name name city city gender gender"
+        //     "phone phone . . mail mail"
+        //     "most most most most most most"
+        //     "other other other other other other";
+				 // row-start/column-start/row-end/column-end.
+				.name{grid-area: 1 / 1 / 2 / 3}
+				.city{grid-area: 1 / 3 / 2 / 6}
+				.gender{grid-area: 1 / 6 / 2 / 7}
+				.phone{grid-area: 2 / 1 / 3 / 4}
+				.mail{grid-area: 2 / 4 / 3 / 7}
+				.most{grid-area: 3 / 1 / 4 / 7}
+				.other{grid-area: 4 / 1 / 5 / 7}
 				div{
 					display: flex;
 					flex-direction: column;
 					height: 100%;
-					// padding: 1rem;
 					label,
 					input
 					{
@@ -135,11 +148,13 @@ section#contact{
 						border: none;
 						@include desktop{
 							font-size: 2rem;
+							// max-width: 150px;
 						}
 					}
 					input{
 						padding: 1rem;
 						// border: 2px	white solid;
+						height: 4rem;
 						@include desktop{
 							height: 4rem;
 
@@ -174,7 +189,7 @@ section#contact{
 				{
 					background: none;
 					width: 100%;
-					grid-column: 1 / 3;
+					// grid-column: 1 / 13;
 				}
 			}
 			input::-webkit-outer-spin-button,
