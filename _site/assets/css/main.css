@@ -10,6 +10,8 @@
 
 @font-face { font-family: 'Abraham'; src: url("/assets/fonts/Abraham-Black.eot"); src: url("/assets/fonts/Abraham-Black.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/Abraham-Black.woff2") format("woff2"), url("/assets/fonts/Abraham-Black.woff") format("woff"), url("/assets/fonts/Abraham-Black.ttf") format("truetype"), url("/assets/fonts/Abraham-Black.svg#Abraham-Black") format("svg"); font-weight: 900; font-style: normal; font-display: swap; }
 
+::selection { background-color: #4d58c3; }
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 html { scroll-behavior: smooth; font-size: 62.5%; overflow-x: hidden; }
@@ -258,9 +260,7 @@ section#contact > div:last-of-type form > div .city { grid-area: 1 / 3 / 2 / 6; 
 
 section#contact > div:last-of-type form > div .gender { grid-area: 1 / 6 / 2 / 7; }
 
-section#contact > div:last-of-type form > div .phone { grid-area: 2 / 1 / 3 / 4; }
-
-section#contact > div:last-of-type form > div .mail { grid-area: 2 / 4 / 3 / 7; }
+section#contact > div:last-of-type form > div .phone { grid-area: 2 / 1 / 3 / 7; }
 
 section#contact > div:last-of-type form > div .most { grid-area: 3 / 1 / 4 / 7; }
 
@@ -276,7 +276,7 @@ section#contact > div:last-of-type form > div div input { padding: 1rem; height:
 
 @media (min-width: 900px) { section#contact > div:last-of-type form > div div input { height: 4rem; } }
 
-section#contact > div:last-of-type form > div div input:focus { box-shadow: 0 0 4px 0pt black; }
+section#contact > div:last-of-type form > div div input:focus, section#contact > div:last-of-type form > div div select:focus { box-shadow: 0 0 4px 0 black; outline: 2px solid #4D58C3; outline-offset: -4px; }
 
 section#contact > div:last-of-type form > div div select { background: white; font-size: 2rem; border-radius: 3px; border: none; -webkit-appearance: none; -moz-appearance: none; background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='30' viewBox='0 0 30 30' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h30v30H0z' fill='none'/></svg>"); background-repeat: no-repeat; background-position-x: 0%; background-position-y: 1rem; border: none; border-radius: 3px; height: 4rem; padding-right: 1rem; }
 
@@ -284,7 +284,7 @@ section#contact > div:last-of-type form > div div:last-child, section#contact > 
 
 section#contact > div:last-of-type form input::-webkit-outer-spin-button, section#contact > div:last-of-type form input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 
-section#contact > div:last-of-type form input[type=number] { -moz-appearance: textfield; }
+section#contact > div:last-of-type form input[type="number"] { -moz-appearance: textfield; }
 
 section#contact > div:last-of-type form .hidden { opacity: 0; pointer-events: none; }
 

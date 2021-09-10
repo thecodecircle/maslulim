@@ -1,15 +1,13 @@
-
-
-section#contact{
+section#contact {
 	// height: 100vh;
 	background-color: $blue;
-	@include desktop{
+	@include desktop {
 		background-color: $blue;
 		flex-direction: row;
 		height: 70vh;
 		// margin-bottom: 100px;
 
-		div.desktop{
+		div.desktop {
 			background-color: white;
 			position: absolute;
 			height: 35vh;
@@ -17,15 +15,15 @@ section#contact{
 			bottom: 0;
 			z-index: 0;
 		}
-		*{
+		* {
 			z-index: 1;
 		}
 	}
-	> div:first-of-type{
+	> div:first-of-type {
 		display: grid;
 		grid-template-areas:
-		"h1 logo"
-		"p logo";
+			"h1 logo"
+			"p logo";
 		align-items: center;
 		// justify-content: center;
 		padding-bottom: 2rem;
@@ -40,36 +38,33 @@ section#contact{
 			// padding: 2rem auto 0 auto;
 			margin: 0 auto;
 			height: 100%;
-
 		}
 
-		h1{
+		h1 {
 			grid-area: h1;
 			font-weight: bold;
 			line-height: 0;
 			margin: 2rem 0 4rem 0;
-			@include desktop{
+			@include desktop {
 				max-width: none;
 				width: auto;
 				align-self: flex-start;
-			};
+			}
 		}
-		p{
+		p {
 			grid-area: p;
 			// font-size: 1.6rem;
 			margin: 0;
 			align-self: flex-end;
-			@include desktop{
+			@include desktop {
 				margin: 0;
 				max-width: none;
 				width: auto;
 				// font-size: 2.4rem;
 				align-self: flex-start;
-
 			}
-
 		}
-		> img{
+		> img {
 			grid-area: logo;
 			align-self: center;
 			justify-self: center;
@@ -89,8 +84,8 @@ section#contact{
 			}
 		}
 	}
-	> div:last-of-type{
-		@include desktop{
+	> div:last-of-type {
+		@include desktop {
 			margin: 0rem auto 0 auto;
 			background: none;
 			// position: relative;
@@ -100,15 +95,15 @@ section#contact{
 		padding: 1rem 2rem;
 		background: white;
 
-		form{
-			@include desktop{
+		form {
+			@include desktop {
 				height: 100%;
 				position: relative;
 				max-width: 600px;
 			}
 			// padding: 2rem;
-			> div{
-				@include desktop{
+			> div {
+				@include desktop {
 					height: calc(100% - 50px - 10rem);
 					// max-height: 400px;
 					row-gap: 0px;
@@ -119,52 +114,65 @@ section#contact{
 				display: grid;
 				column-gap: 1.5rem;
 				row-gap: 3rem;
-				grid-template-columns:  repeat(6, 1fr);
+				grid-template-columns: repeat(6, 1fr);
 				grid-template-rows: repeat(4, auto);
 				// grid-template-areas:
-        //     "name name city city gender gender"
-        //     "phone phone . . mail mail"
-        //     "most most most most most most"
-        //     "other other other other other other";
-				 // row-start/column-start/row-end/column-end.
-				.name{grid-area: 1 / 1 / 2 / 3}
-				.city{grid-area: 1 / 3 / 2 / 6}
-				.gender{grid-area: 1 / 6 / 2 / 7}
-				.phone{grid-area: 2 / 1 / 3 / 4}
-				.mail{grid-area: 2 / 4 / 3 / 7}
-				.most{grid-area: 3 / 1 / 4 / 7}
-				.other{grid-area: 4 / 1 / 5 / 7}
-				div{
+				//     "name name city city gender gender"
+				//     "phone phone . . mail mail"
+				//     "most most most most most most"
+				//     "other other other other other other";
+				// row-start/column-start/row-end/column-end.
+				.name {
+					grid-area: 1 / 1 / 2 / 3;
+				}
+				.city {
+					grid-area: 1 / 3 / 2 / 6;
+				}
+				.gender {
+					grid-area: 1 / 6 / 2 / 7;
+				}
+				.phone {
+					grid-area: 2 / 1 / 3 / 7;
+				}
+				// .mail{grid-area: 2 / 4 / 3 / 7}
+				.most {
+					grid-area: 3 / 1 / 4 / 7;
+				}
+				.other {
+					grid-area: 4 / 1 / 5 / 7;
+				}
+				div {
 					display: flex;
 					flex-direction: column;
 					height: 100%;
 					label,
-					input
-					{
+					input {
 						display: block;
 						width: 100%;
 						font-size: 2rem;
 						border-radius: 3px;
 						border: none;
-						@include desktop{
+						@include desktop {
 							font-size: 2rem;
 							// max-width: 150px;
 						}
 					}
-					input{
+					input {
 						padding: 1rem;
 						// border: 2px	white solid;
 						height: 4rem;
-						@include desktop{
+						@include desktop {
 							height: 4rem;
-
 						}
 					}
-					input:focus{
+					input:focus,
+					select:focus {
 						// border: 2px	$light-blue solid;
-						 box-shadow: 0 0 4px 0pt black;
+						box-shadow: 0 0 4px 0 black;
+						outline: 2px solid $blue;
+						outline-offset: -4px;
 					}
-					select{
+					select {
 						// display: block;
 						// width: 100%;
 						background: white;
@@ -172,21 +180,20 @@ section#contact{
 						border-radius: 3px;
 						border: none;
 						-webkit-appearance: none;
-						 -moz-appearance: none;
-						 background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='30' viewBox='0 0 30 30' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h30v30H0z' fill='none'/></svg>");
-						 background-repeat: no-repeat;
-						 background-position-x: 0%;
-						 background-position-y: 1rem;
-						 border: none;
-						 border-radius: 3px;
-						 height: 4rem;
-						 // padding: 0.7rem;
-						 padding-right: 1rem;
+						-moz-appearance: none;
+						background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='30' viewBox='0 0 30 30' width='30' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h30v30H0z' fill='none'/></svg>");
+						background-repeat: no-repeat;
+						background-position-x: 0%;
+						background-position-y: 1rem;
+						border: none;
+						border-radius: 3px;
+						height: 4rem;
+						// padding: 0.7rem;
+						padding-right: 1rem;
 					}
 				}
 				div:last-child,
-				div:nth-last-child(2)
-				{
+				div:nth-last-child(2) {
 					background: none;
 					width: 100%;
 					// grid-column: 1 / 13;
@@ -194,21 +201,21 @@ section#contact{
 			}
 			input::-webkit-outer-spin-button,
 			input::-webkit-inner-spin-button {
-			  -webkit-appearance: none;
-			  margin: 0;
+				-webkit-appearance: none;
+				margin: 0;
 			}
 
 			/* Firefox */
-			input[type=number] {
-			  -moz-appearance: textfield;
+			input[type="number"] {
+				-moz-appearance: textfield;
 			}
 
-			.hidden{
+			.hidden {
 				opacity: 0;
 				// transition: opacity 700ms;
 				pointer-events: none;
 			}
-			> div:last-of-type{
+			> div:last-of-type {
 				// display: none;
 				position: absolute;
 				// height: 50%;
@@ -222,106 +229,99 @@ section#contact{
 				transform: translate(-50%, -30%);
 				text-align: center;
 				transition: opacity 400ms 200ms;
-
 			}
 
-			> div:last-of-type.show{
+			> div:last-of-type.show {
 				display: block;
 				opacity: 1;
 				pointer-events: all;
 				transform: translate(-50%, -30%);
 			}
 		}
-		p{
-			color: $blue
+		p {
+			color: $blue;
 		}
-
 	}
 
-			[name="submit"],
-			a.whatsapp{
-				margin: 1rem 0;
-				width: 100%;
-				border: none;
-				color: white;
-				background: $blue;
-				border-radius: 3px;
-				font-weight: 500;
-				font-family: "Abraham";
+	[name="submit"],
+	a.whatsapp {
+		margin: 1rem 0;
+		width: 100%;
+		border: none;
+		color: white;
+		background: $blue;
+		border-radius: 3px;
+		font-weight: 500;
+		font-family: "Abraham";
 
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				padding: 1rem 0;
-				cursor: pointer;
-				@include desktop{
-					padding: 0rem 0;
-					height: 50px;
-					margin-top: 5rem;
-					margin-bottom: 5rem;
-					font-size: 3rem;
-				}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem 0;
+		cursor: pointer;
+		@include desktop {
+			padding: 0rem 0;
+			height: 50px;
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+			font-size: 3rem;
+		}
+	}
 
-			}
+	[name="submit"] {
+		font-size: 3rem;
+		@include desktop {
+			position: absolute;
+			bottom: 0;
+			transition: background 100ms, box-shadow 200ms, color 100ms,
+				transform 200ms;
+		}
+	}
+	[name="submit"]:focus,
+	[name="submit"]:hover {
+		background: white;
+		box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.3);
+		color: $blue;
+		transform: translateY(-3px);
+	}
+	a.whatsapp {
+		background: $green;
+		border: none;
+		position: relative;
+		// margin-top: 30px;
+		transition: background 100ms, box-shadow 200ms, transform 200ms, color 200ms;
+		display: flex;
+		align-items: center;
+		font-size: 2rem;
 
-			[name="submit"]{
-				font-size: 3rem;
-				@include desktop{
-					position: absolute;
-					bottom: 0;
-					transition: background 100ms, box-shadow 200ms, color 100ms, transform 200ms;
-
-				}
-			}
-			[name="submit"]:focus,
-			[name="submit"]:hover{
-				background: white;
-				box-shadow: 0px 4px 2px 1px rgba(0,0,0,0.3);
-				color: $blue;
-				transform: translateY(-3px);
-			}
-			a.whatsapp{
-				background: $green;
-				border: none;
-				position: relative;
-				// margin-top: 30px;
-				transition: background 100ms, box-shadow 200ms, transform 200ms, color 200ms;
-				display: flex;
-				align-items: center;
-				font-size: 2rem;
-
-				svg{
-					height: 2.5rem;
-					margin: 0 -3px;
-					position: absolute;
-					right: 0%;
-				}
-				path{
-					transition:	fill 100ms;
-
-				}
-				@include desktop{
-					margin-top: auto;
-
-				}
-			}
-			a.whatsapp:hover,
-			a.whatsapp:focus{
-				background: white;
-				// border: 2px $green solid;
-				box-shadow: 0px 4px 2px 1px rgba(0,0,0,0.3);
-				transform: translateY(-3px);
-				color: $green;
-				path{
-					fill: $green;
-				}
-			}
-			a.desktop-btn{
-				display: none;
-				@include desktop{
-					display: flex;
-				}
-			}
-
-
+		svg {
+			height: 2.5rem;
+			margin: 0 -3px;
+			position: absolute;
+			right: 0%;
+		}
+		path {
+			transition: fill 100ms;
+		}
+		@include desktop {
+			margin-top: auto;
+		}
+	}
+	a.whatsapp:hover,
+	a.whatsapp:focus {
+		background: white;
+		// border: 2px $green solid;
+		box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.3);
+		transform: translateY(-3px);
+		color: $green;
+		path {
+			fill: $green;
+		}
+	}
+	a.desktop-btn {
+		display: none;
+		@include desktop {
+			display: flex;
+		}
+	}
 }

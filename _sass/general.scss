@@ -1,92 +1,88 @@
-
-*{
+::selection {
+	background-color: #4d58c3;
+}
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-html{
+html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
 	overflow-x: hidden;
 }
 
 body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+	background: $backgroundColor;
+	color: $bodyColor;
+	font-family: $bodyFont;
 	overflow-x: hidden;
-	> div:first-child{
+	> div:first-child {
 		overflow-x: hidden;
 	}
 }
 
-
-a{
+a {
 	color: white;
 	text-decoration: none;
 }
-h1{
-	@include desktop{
+h1 {
+	@include desktop {
 		font-size: 5rem;
 	}
 }
-p{
+p {
 	// font-size: 2rem !important;
 }
-hr{
+hr {
 	background: white;
 	height: 7px;
 	margin-bottom: 2rem;
 	border: none;
 	// z-index: 9;
-	@include desktop{
+	@include desktop {
 		width: calc(40% + 2rem);
 		// max-width: 500px;
-
-	};
+	}
 }
 .enter-left,
 .enter-right,
-.enter-top{
+.enter-top {
 	transition: transform 500ms, opacity 500ms;
-	opacity: 0
-
+	opacity: 0;
 }
-.enter-left{
+.enter-left {
 	transform: translateX(-100px);
 }
-.enter-right{
+.enter-right {
 	transform: translateX(100px);
 }
-.enter-top{
+.enter-top {
 	transform: translateY(-100px);
-	@include desktop{
+	@include desktop {
 		transform: translateY(-30px);
-
-	};
-
+	}
 }
 
-.in-view{
-	transform: translate(0,0);
+.in-view {
+	transform: translate(0, 0);
 	opacity: 1;
 }
-.none{
+.none {
 	display: none !important;
 }
-#vimeo{
+#vimeo {
 	height: 60vh;
-	@include desktop{
+	@include desktop {
 		height: auto;
-	};
+	}
 }
-iframe{
+iframe {
 	margin-top: 50px;
 	width: 200vw;
 	left: -50%;
-	@include desktop{
-
+	@include desktop {
 		width: 100%;
 		left: 0;
-	};
+	}
 }
