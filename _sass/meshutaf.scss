@@ -1,26 +1,53 @@
-
-section#meshutaf{
-	 > div:first-of-type{
+section#meshutaf {
+	> div:first-of-type {
 		background-color: $pink;
-		@include desktop {
-
+		@include tablet {
 			align-items: flex-end;
-
 		}
 	}
-	> div:last-of-type{
-		img:first-child{
+	> div:last-of-type {
+		img:first-child {
 			width: 110%;
 			margin-top: -50%;
 			align-self: baseline;
 			z-index: 1;
 		}
-		@include desktop {
-			img{
+		@include tablet {
+			img {
 				position: relative;
 				display: block;
 			}
-			img:first-child{
+			img:first-child {
+				// width: 60%;
+				height: 75%;
+				// max-width: 700px;
+				// margin-top: -30%;
+				align-self: baseline;
+				position: absolute;
+				z-index: 1;
+				bottom: 0;
+				width: initial;
+				margin-top: 0;
+				align-self: auto;
+			}
+			// img:first-child{
+			// @include tablet {
+			// 	width: 110%;
+			// 	margin-top: -50%;
+			// 	align-self: baseline;
+			// 	z-index: 1;
+			// }
+			// bottom: 0;
+			// right: 0;
+
+			img:last-child {
+				width: 100%;
+				display: block;
+				margin-top: -4%;
+			}
+		}
+		@include desktop {
+			img:first-child {
 				// width: 60%;
 				height: 100%;
 				// max-width: 700px;
@@ -32,25 +59,7 @@ section#meshutaf{
 				width: initial;
 				margin-top: 0;
 				align-self: auto;
-
 			}
-			// img:first-child{
-			// @include desktop {
-			// 	width: 110%;
-			// 	margin-top: -50%;
-			// 	align-self: baseline;
-			// 	z-index: 1;
-			// }
-				// bottom: 0;
-				// right: 0;
-
-			img:last-child{
-				width: 100%;
-				display: block;
-				margin-top: -4%;
-			}
-
 		}
 	}
-
 }

@@ -1,16 +1,16 @@
 section#contact {
 	// height: 100vh;
 	background-color: $blue;
-	@include desktop {
+	@include tablet {
 		background-color: $blue;
 		flex-direction: row;
-		height: 70vh;
+		height: 90vh;
 		// margin-bottom: 100px;
 
 		div.desktop {
 			background-color: white;
 			position: absolute;
-			height: 35vh;
+			height: 50%;
 			width: 100%;
 			bottom: 0;
 			z-index: 0;
@@ -18,6 +18,9 @@ section#contact {
 		* {
 			z-index: 1;
 		}
+	}
+	@include desktop {
+		height: 70vh;
 	}
 	> div:first-of-type {
 		display: grid;
@@ -27,7 +30,7 @@ section#contact {
 		align-items: center;
 		// justify-content: center;
 		padding-bottom: 2rem;
-		@include desktop {
+		@include tablet {
 			display: flex;
 			flex-direction: column;
 			position: relative;
@@ -45,7 +48,7 @@ section#contact {
 			font-weight: bold;
 			line-height: 0;
 			margin: 2rem 0 4rem 0;
-			@include desktop {
+			@include tablet {
 				max-width: none;
 				width: auto;
 				align-self: flex-start;
@@ -56,7 +59,7 @@ section#contact {
 			// font-size: 1.6rem;
 			margin: 0;
 			align-self: flex-end;
-			@include desktop {
+			@include tablet {
 				margin: 0;
 				max-width: none;
 				width: auto;
@@ -73,7 +76,7 @@ section#contact {
 			min-width: 100px;
 			height: 100%;
 			margin-bottom: 0%;
-			@include desktop {
+			@include tablet {
 				position: absolute;
 				bottom: calc(50px + 10rem);
 				height: auto;
@@ -85,7 +88,7 @@ section#contact {
 		}
 	}
 	> div:last-of-type {
-		@include desktop {
+		@include tablet {
 			margin: 0rem auto 0 auto;
 			background: none;
 			// position: relative;
@@ -96,14 +99,14 @@ section#contact {
 		background: white;
 
 		form {
-			@include desktop {
+			@include tablet {
 				height: 100%;
 				position: relative;
 				max-width: 600px;
 			}
 			// padding: 2rem;
 			> div {
-				@include desktop {
+				@include tablet {
 					height: calc(100% - 50px - 10rem);
 					// max-height: 400px;
 					row-gap: 0px;
@@ -152,7 +155,7 @@ section#contact {
 						font-size: 2rem;
 						border-radius: 3px;
 						border: none;
-						@include desktop {
+						@include tablet {
 							font-size: 2rem;
 							// max-width: 150px;
 						}
@@ -161,7 +164,7 @@ section#contact {
 						padding: 1rem;
 						// border: 2px	white solid;
 						height: 4rem;
-						@include desktop {
+						@include tablet {
 							height: 4rem;
 						}
 					}
@@ -259,7 +262,7 @@ section#contact {
 		align-items: center;
 		padding: 1rem 0;
 		cursor: pointer;
-		@include desktop {
+		@include tablet {
 			padding: 0rem 0;
 			height: 50px;
 			margin-top: 5rem;
@@ -270,7 +273,7 @@ section#contact {
 
 	[name="submit"] {
 		font-size: 3rem;
-		@include desktop {
+		@include tablet {
 			position: absolute;
 			bottom: 0;
 			transition: background 100ms, box-shadow 200ms, color 100ms,
@@ -303,7 +306,7 @@ section#contact {
 		path {
 			transition: fill 100ms;
 		}
-		@include desktop {
+		@include tablet {
 			margin-top: auto;
 		}
 	}
@@ -320,7 +323,7 @@ section#contact {
 	}
 	a.desktop-btn {
 		display: none;
-		@include desktop {
+		@include tablet {
 			display: flex;
 		}
 	}

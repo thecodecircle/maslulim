@@ -1,5 +1,4 @@
-
-nav{
+nav {
 	position: fixed;
 	z-index: 5;
 	width: 100%;
@@ -9,7 +8,7 @@ nav{
 	background: $blue;
 	// border-bottom: 3px solid white;
 
-	@include desktop {
+	@include tablet {
 		border-bottom: none;
 		display: flex;
 		flex-direction: row;
@@ -17,30 +16,30 @@ nav{
 		align-items: center;
 		height: 7vh;
 	}
-	> div:first-child{
+	> div:first-child {
 		border-bottom: 3px solid white;
-		@include desktop{
+		@include tablet {
 			border-bottom: 3px solid white;
 			width: 10%;
 			height: 100%;
 			margin: 0;
 			padding-right: 2rem;
-			min-width: 150px
-		};
+			min-width: 150px;
+		}
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		// margin: 0 5vw 0 5vw;
-		padding: .5rem 5vw 0 5vw;
+		padding: 0.5rem 5vw 0 5vw;
 		// position: relative;
 		background: $blue;
-		button.menu{
+		button.menu {
 			background: none;
 			border: none;
-			@include desktop {
-	      display: none;
-   		}
-			span{
+			@include tablet {
+				display: none;
+			}
+			span {
 				display: block;
 				height: 3px;
 				width: 30px;
@@ -48,33 +47,29 @@ nav{
 				margin: 5px 0;
 				border-radius: 1px;
 			}
-
 		}
-		> a{
+		> a {
 			// position: relative;
-			@include desktop{
+			@include tablet {
 				height: 100%;
 			}
 
-				img{
-					width: 50%;
-					margin-top: 4%;
-					// position: absolute;
-					// bottom: 0;
-					display: block;
-					@include desktop {
-						margin-top: 0%;
-						height: 100%;
-						width: auto;
-
-					}
+			img {
+				width: 50%;
+				margin-top: 4%;
+				// position: absolute;
+				// bottom: 0;
+				display: block;
+				@include tablet {
+					margin-top: 0%;
+					height: 100%;
+					width: auto;
 				}
+			}
 		}
 	}
-
-
 }
-nav div + div{
+nav div + div {
 	// transform:scale(0);
 	font-size: 2rem;
 	height: 0px;
@@ -86,20 +81,19 @@ nav div + div{
 	z-index: 2;
 	width: 100%;
 	text-align: center;
-	@include desktop {
+	@include tablet {
 		flex-direction: row;
 		height: 100%;
 		position: relative;
 		justify-content: space-between;
 		// padding: 0 3vw;
-
-   }
-	> a{
+	}
+	> a {
 		opacity: 0;
 		pointer-events: none;
 		padding: 1rem 0;
 		transition: opacity 100ms;
-		@include desktop {
+		@include tablet {
 			position: relative;
 			border-bottom: 3px solid white;
 			width: 100%;
@@ -111,67 +105,61 @@ nav div + div{
 			display: flex;
 			align-items: center;
 			justify-content: center;
-	   }
+		}
 
-
-		 button{
-			 font-size: 2rem;
-			 background: white;
-			 border: 2px solid white;
-			 padding: 0.5rem 2rem;
-			 border-radius: 3px;
-			 color: $blue;
-			 font-weight: bold;
-			 cursor: pointer;
-			 transition: box-shadow 100ms, transform 100ms;
-			 @include desktop{
-				 background: white;
-				 border: white;
-				 color: $blue;
-				 // position: absolute;
-				 // bottom: 0;
-				 // border-radius: 3px 3px 0 0;
-				 // padding: 1rem 2rem 2rem 2rem;
-			 };
-		 }
+		button {
+			font-size: 2rem;
+			background: white;
+			border: 2px solid white;
+			padding: 0.5rem 2rem;
+			border-radius: 3px;
+			color: $blue;
+			font-weight: bold;
+			cursor: pointer;
+			transition: box-shadow 100ms, transform 100ms;
+			@include tablet {
+				background: white;
+				border: white;
+				color: $blue;
+				// position: absolute;
+				// bottom: 0;
+				// border-radius: 3px 3px 0 0;
+				// padding: 1rem 2rem 2rem 2rem;
+			}
+		}
 	}
-	> a:hover{
+	> a:hover {
 		background: white;
 		color: $blue;
-		@include desktop{
+		@include tablet {
 			border-bottom: 3px solid $blue;
-
-		};
+		}
 		transition: background 200ms, border 200ms;
 	}
 	// > a:last-child{
 	// 	border: 3px white solid;
 	// 	// box-shadow: 1px 1
 	// }
-	> a:last-child:hover{
+	> a:last-child:hover {
 		color: $blue;
 		background: $blue;
-		@include desktop{
+		@include tablet {
 			color: $blue;
 			background: initial;
 			border-bottom: 3px solid white;
-
-		};
+		}
 		// border: 1px solid white;
-
 	}
 	button:hover,
-	button:focus{
-
-		box-shadow: 0px 4px 2px 1px rgba(0,0,0,0.3);
+	button:focus {
+		box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.3);
 		transform: translateY(-3px);
-
 	}
 	transition: transform 300ms, height 300ms;
 	transform-origin: top;
 }
 
-div + div.show{
+div + div.show {
 	transform: scale(1);
 	// position: relative;
 	// opacity: 1;
@@ -179,7 +167,7 @@ div + div.show{
 	// display: flex;
 	justify-content: space-between;
 	padding: 1rem 0;
-	a{
+	a {
 		transition: opacity 300ms 200ms;
 		// height: 100%;
 		transform: scale(1);

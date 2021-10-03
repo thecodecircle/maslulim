@@ -1,8 +1,7 @@
-
-section#nachshonim{
-	@include desktop {
+section#nachshonim {
+	@include tablet {
 		position: relative;
-		img:first-of-type{
+		img:first-of-type {
 			position: absolute;
 			height: 100%;
 			top: 0;
@@ -10,44 +9,40 @@ section#nachshonim{
 			z-index: 1;
 		}
 	}
-	 div:first-of-type{
-		 @include desktop {
- 			display: flex;
+	div:first-of-type {
+		@include tablet {
+			display: flex;
 
- 			display: flex;
- 			align-items: flex-start;
- 			h1,
- 			p{
-
+			display: flex;
+			align-items: flex-start;
+			h1,
+			p {
 				z-index: 1;
- 			}
- 			img.desktop{
- 				position: absolute;
- 				top: 0;
- 				width: 50%;
- 				left: 0;
-
- 			}
-
- 		}
+			}
+			img.desktop {
+				position: absolute;
+				top: 0;
+				width: 50%;
+				left: 0;
+			}
+		}
 		background-color: $light-blue;
-		img{
+		img {
 			margin-top: -40%;
 			width: 110%;
 			transform: translateY(50%);
-
 		}
 	}
-	div:last-of-type{
-		@include desktop {
-			img:last-child{
+	div:last-of-type {
+		@include tablet {
+			img:last-child {
 				width: 60%;
 				margin-top: -10%;
 				z-index: 0;
 				margin-bottom: -1%;
 			}
 		}
-		img{
+		img {
 			width: 100%;
 			margin-top: -20%;
 			margin-left: 15%;

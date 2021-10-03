@@ -27,7 +27,7 @@ a {
 	text-decoration: none;
 }
 h1 {
-	@include desktop {
+	@include tablet {
 		font-size: 5rem;
 	}
 }
@@ -40,7 +40,7 @@ hr {
 	margin-bottom: 2rem;
 	border: none;
 	// z-index: 9;
-	@include desktop {
+	@include tablet {
 		width: calc(40% + 2rem);
 		// max-width: 500px;
 	}
@@ -59,7 +59,7 @@ hr {
 }
 .enter-top {
 	transform: translateY(-100px);
-	@include desktop {
+	@include tablet {
 		transform: translateY(-30px);
 	}
 }
@@ -73,7 +73,7 @@ hr {
 }
 #vimeo {
 	height: 60vh;
-	@include desktop {
+	@include tablet {
 		height: auto;
 	}
 }
@@ -81,7 +81,7 @@ iframe {
 	margin-top: 50px;
 	width: 200vw;
 	left: -50%;
-	@include desktop {
+	@include tablet {
 		width: 100%;
 		left: 0;
 	}

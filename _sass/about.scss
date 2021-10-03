@@ -1,56 +1,53 @@
-section#about{
+section#about {
 	background-color: $blue;
 	// padding: 2rem 2rem;
 	// margin-top: 23vh;
-	@include desktop {
+	@include tablet {
 		display: flex;
 		flex-direction: column;
 		padding: 0;
-		height: 100vh;
+		min-height: 100vh;
 	}
-	hr{
-		@include desktop{
+	hr {
+		@include tablet {
 			display: none;
-		};
+		}
 	}
-	div:first-of-type{
+	div:first-of-type {
 		// padding: 0;
-		@include desktop {
+		@include tablet {
 			// padding: 2rem 8rem;
 			// padding: initial;
-			height: 50%;
+			min-height: 0 !important;
 			display: grid;
 			grid-template-areas:
-			"h1 logo"
-			"p logo";
+				"h1 logo"
+				"p logo";
 			align-items: center;
 			justify-content: space-between;
 		}
-		p{
+		p {
 			grid-area: p;
-			@include desktop{
+			@include tablet {
 				width: 80%;
 				margin-bottom: 13%;
 				max-width: 800px;
-			};
+			}
 		}
 
-		h1{
+		h1 {
 			grid-area: h1;
 		}
-		img.about-logo{
+		img.about-logo {
 			grid-area: logo;
 			display: none;
-			@include desktop{
+			@include tablet {
 				justify-self: center;
 				display: block;
 				width: 90%;
-			};
+			}
 		}
-
-
 	}
-
 
 	div + div {
 		display: flex;
@@ -59,7 +56,7 @@ section#about{
 
 		padding: 0 2rem 2rem 2rem;
 
-		@include desktop {
+		@include tablet {
 			position: relative;
 			background: white;
 			align-items: flex-end;
@@ -67,56 +64,55 @@ section#about{
 			height: 50%;
 			display: grid;
 			grid-template-areas:
-			"h1"
-			"p";
+				"h1"
+				"p";
 			align-items: center;
 			justify-items: flex-end;
 			// margin: 0 -2rem -2rem -2rem;
 			margin: 0;
 			// margin-top: 10%;
 			// padding: 2rem 8rem;
-			padding: 2rem	10vw;
+			padding: 2rem 10vw;
 			color: $blue;
 		}
-		> *{
-			@include desktop{
+		> * {
+			@include tablet {
 				width: 50%;
-			};
+			}
 		}
 
-		h1{
+		h1 {
 			line-height: 0;
 			margin: 2rem 0 4.5rem 0;
 
-			@include desktop{
+			@include tablet {
 				grid-area: h1;
 				margin: 0;
 				line-height: normal;
 				width: 45%;
-			};
+			}
 		}
-		p{
-			@include desktop{
+		p {
+			@include tablet {
 				grid-area: p;
-					width: 45%;
-					// margin-right: auto;
-					// // margin-bottom: 13%;
-					// max-width: 800px;
-
-			};
+				width: 45%;
+				// margin-right: auto;
+				// // margin-bottom: 13%;
+				// max-width: 800px;
+			}
 		}
 
-		img.about-logo{
+		img.about-logo {
 			width: 70%;
 			align-self: center;
-			@include desktop{
+			@include tablet {
 				display: none;
-			};
+			}
 		}
 	}
-	img.about-kids{
+	img.about-kids {
 		display: none;
-		@include desktop{
+		@include tablet {
 			position: absolute;
 			display: block;
 			// width: 100px;

@@ -1,42 +1,42 @@
-section{
+section {
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	color: white;
-	@include desktop{
+	@include tablet {
 		// padding: 0 100px;
-	};
-	h1{
+	}
+	h1 {
 		font-size: 5rem;
 		margin-bottom: 1rem;
 	}
 	p,
-	ul{
+	ul {
 		font-size: 2rem;
 		line-height: 1.5;
 		margin-bottom: 2rem;
 		// text-align: justify;
 		// text-justify: inter-word;
 	}
-	ul{
+	ul {
 		// list-style: inside;
 		z-index: 1;
 		// text-align: right;
 		margin-right: 2rem;
-		@include desktop{
+		@include tablet {
 			width: calc(40%);
 			// max-width: 500px;
-		};
+		}
 	}
 }
-.desktop{
+.desktop {
 	display: none !important;
 }
-@include desktop {
-	.mobile{
+@include tablet {
+	.mobile {
 		display: none !important;
 	}
-	.desktop{
+	.desktop {
 		display: block !important;
 	}
 }
@@ -47,40 +47,36 @@ section#social-justice,
 section#kibbutzi,
 section#nachshonim,
 section#hero,
-section#contact
-{
+section#contact {
 	scroll-margin-top: 50px;
-	> div:first-of-type{
+	> div:first-of-type {
 		padding: 2rem 2rem 0 2rem;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		@include desktop {
+		@include tablet {
 			display: flex;
 			justify-content: center;
-			padding: 2rem	10vw;
+			padding: 2rem 10vw;
 			min-height: 30vh;
 		}
-		> img{
+		> img {
 			width: 120%;
 			align-self: center;
 			// transform: translateY(10%);
-
 		}
 		h1,
-		p{
-			@include desktop{
+		p {
+			@include tablet {
 				width: calc(40% + 2rem);
 				// max-width: 500px;
-
-			};
+			}
 		}
 	}
-	> div:last-of-type{
-		img{
+	> div:last-of-type {
+		img {
 			position: relative;
 			display: block;
 		}
-
 	}
 }

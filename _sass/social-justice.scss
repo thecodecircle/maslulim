@@ -1,7 +1,7 @@
 section#social-justice {
-	@include desktop {
+	@include tablet {
 		position: relative;
-		img:first-of-type{
+		img:first-of-type {
 			position: absolute;
 			height: 100%;
 			top: 0;
@@ -9,18 +9,16 @@ section#social-justice {
 			z-index: 1;
 		}
 	}
-	div:first-of-type{
-	background-color: $red;
+	div:first-of-type {
+		background-color: $red;
 	}
 
-
-	> div:first-of-type{
-		img{
+	> div:first-of-type {
+		img {
 			margin-top: -20%;
 			transform: translateY(13%);
-
 		}
-		@include desktop {
+		@include tablet {
 			display: flex;
 
 			display: flex;
@@ -31,27 +29,25 @@ section#social-justice {
 			// 	width: 40%;
 			// 	max-width: 500px;
 			// }
-			img.desktop{
+			img.desktop {
 				position: absolute;
 				top: 0;
 				width: 50%;
 				left: 0;
 			}
-
 		}
 	}
-	> div:last-of-type{
-
-		img:first-child{
+	> div:last-of-type {
+		img:first-child {
 			width: 110%;
 			margin-top: -40%;
 			align-self: baseline;
 			z-index: 1;
 		}
-	@include desktop {
-		img:last-child{
-			width: 60%;
+		@include tablet {
+			img:last-child {
+				width: 60%;
+			}
 		}
-	}
 	}
 }

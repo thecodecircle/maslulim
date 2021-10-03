@@ -1,26 +1,25 @@
-section#hero{
+section#hero {
 	// position: absolute;
 	// z-index: 10;
 	// bottom: 0;
 	// width: 100vw;
 	// // height: 5vh;
 	background: white;
-	@include desktop{
+	@include tablet {
 		margin-top: -30vh;
-
-	};
-	div:first-of-type{
-		@include desktop{
+	}
+	div:first-of-type {
+		@include tablet {
 			padding: 0 10vw;
 			flex-direction: row;
-		};
+		}
 		padding: 2rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		// padding-top: 0;
-		a{
+		a {
 			background: $blue;
 			padding: 1rem;
 			font-size: 2rem;
@@ -31,32 +30,30 @@ section#hero{
 			text-align: center;
 			transition: background 200ms, box-shadow 100ms;
 			// align-self: flex-end;
-			@include desktop{
+			@include tablet {
 				// align-self: center;
 				width: 20%;
 				font-size: 3rem;
-			};
-
+			}
 		}
 		a:hover,
-		a:focus{
-			box-shadow: 0px 4px 2px 1px rgba(0,0,0,0.3);
+		a:focus {
+			box-shadow: 0px 4px 2px 1px rgba(0, 0, 0, 0.3);
 			transform: translateY(-3px);
 			background: white;
 			color: $blue;
 		}
-		p{
+		p {
 			width: 100%;
 			// margin: .7rem 1rem;
 			color: $blue;
 			text-align: right;
-			@include desktop{
+			@include tablet {
 				width: 50%;
 				font-size: 3rem;
 				margin: 0;
-			};
+			}
 			// white-space: pre;
 		}
 	}
-
 }
